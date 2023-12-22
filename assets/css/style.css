@@ -132,6 +132,10 @@ span {
   display: block;
 }
 
+.fa-solid{
+  border-color: var(--text-gradient-yellow);
+}
+
 button {
   font: inherit;
   background: none;
