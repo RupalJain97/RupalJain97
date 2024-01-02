@@ -803,13 +803,14 @@ main {
 
 .skills-title {
   margin-bottom: 20px;
+  color: var(--orange-yellow-crayola);
 }
 
 .skills-list {
-  display: grid;
-  justify-content: center;
-  align-items: stretch;
-  gap: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 27px;
   padding-bottom: 20px;
 }
 
@@ -822,8 +823,8 @@ main {
 
 .skills-item {
   position: relative;
-  background: var(--onyx);
-  padding: 12px;
+  /* background: var(--onyx); */
+  /* padding: 12px; */
   border-radius: 14px;
   box-shadow: var(--shadow-5);
 }
