@@ -41,7 +41,8 @@
   --text-gradient-yellow: linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
-  --border-gradient-onyx2: linear-gradient(90deg, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  --border-gradient-onyx2: linear-gradient(to bottom right, hsl(0, 0%, 40%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  --border-gradient-onyx3: linear-gradient(90deg, hsl(0, 0%, 40%) 0%, hsla(0, 0%, 25%, 0) 50%);
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
@@ -196,7 +197,7 @@ article {
 
 .icon-box {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx2);
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -373,7 +374,7 @@ main {
 }
 
 .info-content .name {
-  color: var(--white-2);
+  color: var(--orange-yellow-crayola);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
@@ -398,7 +399,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx2);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -565,7 +566,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx2);
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -814,7 +815,7 @@ main {
 
 .volunteer-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx2);
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -869,6 +870,10 @@ main {
  * skills 
  */
 
+.skill {
+  margin-bottom: 35px;
+}
+
 .skills-title {
   margin-bottom: 20px;
 }
@@ -892,7 +897,8 @@ li>.skills-title {
 .skills-content {
   /* align-items: stretch; */
   gap: 30px;
-  padding: 20px;
+  padding: 10px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -901,7 +907,7 @@ li>.skills-title {
 
 .skills-list-parent {
   position: relative;
-  background: var(--border-gradient-onyx2);
+  background: var(--border-gradient-onyx3);
   padding-top: 15px;
   padding-left: 15px;
   border-radius: 14px;
@@ -954,14 +960,42 @@ li>.skills-title {
   font-weight: var(--fw-300);
 }
 
-/* .skills-separator{
-  content: "";
-  width: 3px;
-  height: 100%;
-  background: var(--text-gradient-yellow);
-  border-radius: 3px;
-  border-left: 6px solid green;
-} */
+
+/**
+ * Interpersonal skills 
+ */
+
+.interpersonalskill-title {
+  margin-bottom: 20px;
+}
+
+.interpersonalskill-content {
+  gap: 30px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  cursor: auto !important;
+}
+
+.interpersonalskill-item {
+  position: relative;
+}
+
+.interpersonalskill .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.interpersonalskill .title-wrapper data {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
 
 
 
@@ -1137,7 +1171,7 @@ li>.skills-title {
   display: block;
   animation: scaleUp 0.25s ease forwards;
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx2);
   border-radius: 14px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-2);
@@ -1557,7 +1591,7 @@ li>.skills-title {
     padding-bottom: 35px;
   }
 
-  .content-card {
+  .content-card:not(.skills-content) {
     padding: 30px;
     padding-top: 25px;
   }
@@ -1642,7 +1676,6 @@ li>.skills-title {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     /* gap: 20px 25px; */
   }
-
 
 
   /**
