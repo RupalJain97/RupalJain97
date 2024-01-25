@@ -41,7 +41,7 @@
   --text-gradient-yellow: linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
-
+  --border-gradient-onyx2: linear-gradient(90deg, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
@@ -879,19 +879,43 @@ li>.skills-title {
 }
 
 .skills-list {
-  display: grid;
-  align-items: end;
-  gap: 27px;
+  display: flex;
+  gap: 20px;
   padding-bottom: 20px;
-  justify-content: start;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: flex-end;
 }
 
 .skills-content {
-  justify-content: center;
-  align-items: stretch;
-  gap: 18px;
+  /* align-items: stretch; */
+  gap: 30px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: auto !important;
+}
+
+.skills-list-parent {
+  position: relative;
+  background: var(--border-gradient-onyx2);
+  padding-top: 15px;
+  padding-left: 15px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.skills-list-parent::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .skills-item {
@@ -913,6 +937,7 @@ li>.skills-title {
 
 .skills-content-box {
   text-align: center;
+  max-width: 90px;
 }
 
 .skill .title-wrapper {
@@ -1671,6 +1696,7 @@ li>.skills-title {
   .has-scrollbar::-webkit-scrollbar-button {
     width: 100px;
   }
+
   .sidebar.active {
     max-height: 465px;
   }
