@@ -108,6 +108,30 @@
   #RESET
 \*-----------------------------------*/
 
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--smoky-black);
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 5px solid var(--smoky-black);
+  background: hsla(0, 0%, 100%, 0.1);
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+    inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+body::-webkit-scrollbar-button {
+  height: 60px;
+} 
+
 *,
 *::before,
 *::after {
@@ -335,6 +359,10 @@ article.active {
 \*-----------------------------------*/
 
 main {
+  flex: 1;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
   margin: 25px 30px !important;
   /* margin: 15px 12px; */
   margin-bottom: 75px;
@@ -350,14 +378,23 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
+  flex: 1;
   margin-bottom: 15px;
   max-height: 125px;
   overflow: hidden;
   transition: var(--transition-2);
+  overscroll-behavior: contain;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar.active {
   max-height: 550px;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
 }
 
 .sidebar-info {
@@ -523,6 +560,29 @@ main {
 
 
 
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+.main-content {
+  flex: 3;
+  max-height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.main-content::-webkit-scrollbar {
+  display: none;
+}
+
+.main-content.active {
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  scroll-snap-type: inline mandatory;
+}
 
 
 /*-----------------------------------*\
@@ -1373,12 +1433,23 @@ li>.skills-title {
    */
   .sidebar {
     margin-bottom: 15px;
-    max-height: 130px;
-    overflow: hidden;
+    /* max-height: 130px; */
+    overflow-y: auto;
     transition: var(--transition-2);
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
   }
 
-
+  /**
+   * Main
+   */
+  .main-content {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+  }
 
 
   /**
