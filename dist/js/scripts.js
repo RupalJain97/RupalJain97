@@ -20,7 +20,19 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
+    };
 
+    // Navbar shrink function
+    var projectsNavShrink = function () {
+        const projectsnavbarCollapsible = document.body.querySelector('#projects');
+        if (!projectsnavbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            projectsnavbarCollapsible.classList.remove('navbar-shrink')
+        } else {
+            projectsnavbarCollapsible.classList.add('navbar-shrink')
+        }
     };
 
     // Shrink the navbar 
@@ -38,18 +50,19 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
+    // // Collapse responsive navbar when toggler is visible
+    // const navbarToggler = document.body.querySelector('#mainNav.navbar-toggler');
+    // const responsiveNavItems = [].slice.call(
+    //     document.querySelectorAll('#mainNav #navbarResponsive .nav-link')
+    // );
+    // responsiveNavItems.map(function (responsiveNavItem) {
+    //     console.log("adding click")
+    //     responsiveNavItem.addEventListener('click', () => {
+    //         if (window.getComputedStyle(navbarToggler).display !== 'none') {
+    //             navbarToggler.click();
+    //         }
+    //     });
+    // });
 
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
