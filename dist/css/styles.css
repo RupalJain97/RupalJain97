@@ -70,6 +70,7 @@
   --bs-highlight-bg: #fff3cd;
   /* My Own color Pallete */
   --mainNav-font-color: rgb(11 99 90 / 91%);
+  --mainNav-hover-color: rgb(10 78 72);
   --main-background-color: rgba(100, 209, 198, 0.55);
   --main-background-color-light: rgba(114, 210, 200, 0.314);
   --bs-text-color: #12575e;
@@ -12793,7 +12794,7 @@ hr.divider-grey {
 
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: var(--main-background-color) !important;
+  color: var(--mainNav-hover-color) !important;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
@@ -12820,16 +12821,15 @@ hr.divider-grey {
 
 
 #projects .navbar-nav .nav-link:hover,
-#projects .navbar-nav .nav-link:active,
-#projects .navbar .nav-link:hover,
-#projects .navbar .nav-link:active {
+#projects .navbar .nav-link:hover {
   /* color: var(--main-background-color) !important; */
   font-weight: bold;
+  color: var(--mainNav-hover-color) !important;
 }
 
 #projects .navbar-nav .nav-link.active,
 #projects .navbar .nav-link.active {
-  color: var(--bs-nav-link-disabled-color) !important;
+  color: var(--bs-secondary) !important;
 }
 
 .project-toggler-icon {
@@ -12893,10 +12893,6 @@ hr.divider-grey {
     padding: 0 1rem;
   }
 
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
-  }
-
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
@@ -12936,9 +12932,6 @@ hr.divider-grey {
     padding: 0 1rem;
   }
 
-  #projects .navbar-nav .nav-link:hover {
-    color: #fff;
-  }
 
   #projects .navbar-nav:last-child .nav-link {
     padding-right: 0;
