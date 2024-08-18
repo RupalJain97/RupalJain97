@@ -13105,10 +13105,10 @@ header.masthead .h2 {
     opacity: 1;
     display: block;
   }
-
-  #ResumeContact .contact{
+ 
+  /* #ResumeContact .contact {
     padding-bottom: 0.5rem;
-  }
+  } */
 
 }
 
@@ -13259,6 +13259,7 @@ header.masthead .h2 {
   /* font-weight: bold; */
   margin-bottom: 10px;
 }
+
 .card-timeline-enddate {
   font-size: 18px;
   color: var(--bs-magenta-font);
@@ -13319,7 +13320,7 @@ header.masthead .h2 {
 }
 
 
-footer .container{
-display: flex;
-justify-content: space-between;
+footer .container {
+  display: flex;
+  justify-content: space-between;
 }
