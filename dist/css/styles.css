@@ -74,7 +74,10 @@
   --main-background-color: rgba(100, 209, 198, 0.55);
   --main-background-color-light: rgba(114, 210, 200, 0.314);
   --bs-text-color: #12575e;
-
+  --bs-horizontal-line-color: rgb(47 149 139 / 91%);
+  --bs-timeline-date-color: rgb(7 206 186);
+  --bs-contrast-pink: #c80777;
+  --bs-magenta-font: #c80754d6;
 }
 
 *,
@@ -9191,9 +9194,6 @@ fieldset:disabled .btn {
   color: #6c757d !important;
 }
 
-
-
-
 .text-reset {
   --bs-text-opacity: 1;
   color: inherit !important;
@@ -13070,6 +13070,10 @@ header.masthead .h2 {
   display: none;
 }
 
+#ResumeContact #verticalLine {
+  display: none;
+}
+
 
 @media (max-width: 991px) {
 
@@ -13088,6 +13092,24 @@ header.masthead .h2 {
   #about #refer2 {
     border-left: 0px !important;
   }
+
+
+  #ResumeContact #verticalLine {
+    display: block;
+  }
+
+  #ResumeContact hr {
+    height: 0.15rem;
+    max-width: 150px;
+    margin: 1.5rem auto;
+    opacity: 1;
+    display: block;
+  }
+
+  #ResumeContact .contact{
+    padding-bottom: 0.5rem;
+  }
+
 }
 
 
@@ -13176,4 +13198,128 @@ header.masthead .h2 {
 #portfolio .container-xl .portfolio-box-caption .project-name,
 #portfolio .container-xxl .portfolio-box-caption .project-name {
   background-color: transparent;
+}
+
+
+
+
+/* ******************************************** */
+/* Card Timeline Container */
+.card-timeline {
+  position: relative;
+  margin: 50px 0;
+}
+
+.card-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  /* Align with the timeline circles */
+  width: 2px;
+  background: var(--bs-horizontal-line-color);
+}
+
+/* Card Timeline Item */
+.card-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Timeline Icon (small circle) */
+.card-timeline-icon {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: var(--bs-horizontal-line-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.card-timeline-content {
+  background: var(--bs-gray-200);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+  /* Space for the timeline */
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+/* Timeline Date */
+.card-timeline-date {
+  font-size: 14px;
+  color: var(--bs-magenta-font);
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+.card-timeline-enddate {
+  font-size: 18px;
+  color: var(--bs-magenta-font);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Content within the Card */
+.card-timeline-content .card-timeline-program {
+  font-size: 20px;
+  color: var(--mainNav-hover-color);
+  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.card-timeline-content .card-timeline-university {
+  font-size: 16px;
+  color: var(--bs-code-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-timeline-content .card-timeline-course {
+  font-size: 14px;
+  color: var(--bs-gray-600);
+
+}
+
+.card-timeline-content .card-timeline-gpa {
+  font-size: 14px;
+  color: var(--bs-gray-800);
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .card-timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-timeline-icon {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 10px;
+  }
+
+  .card-timeline-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .card-timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+footer .container{
+display: flex;
+justify-content: space-between;
 }
