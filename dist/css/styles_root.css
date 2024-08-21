@@ -551,7 +551,7 @@ header.masthead .h2 {
   }
 }
 
-#about #verticalLine {
+#testimonial #verticalLine {
   display: none;
 }
 
@@ -559,14 +559,13 @@ header.masthead .h2 {
   display: none;
 }
 
-
 @media (max-width: 991px) {
 
-  #about #verticalLine {
+  #testimonial #verticalLine {
     display: block;
   }
 
-  #about hr {
+  #testimonial hr {
     height: 0.15rem;
     max-width: 150px;
     margin: 1.5rem auto;
@@ -574,7 +573,7 @@ header.masthead .h2 {
     display: block;
   }
 
-  #about #refer2 {
+  #testimonial #refer2 {
     border-left: 0px !important;
   }
 
@@ -806,7 +805,7 @@ header.masthead .h2 {
   margin-left: 40px;
   /* Space for the timeline */
   position: relative;
-  /* width: 100%; */
+  width: 100%;
   text-align: left;
 }
 
@@ -857,7 +856,7 @@ header.masthead .h2 {
   .card-timeline-item {
     flex-direction: column;
     align-items: start;
-    /* margin-left: 20px; */
+    margin-right: 20px;
   }
 
   .card-timeline-icon {
@@ -878,30 +877,6 @@ header.masthead .h2 {
   }
 }
 
-@media (max-width: 576px) {
-  .card-timeline-item {
-    flex-direction: column;
-    align-items: start;
-    /* margin-left: 20px; */
-  }
-
-  .card-timeline-icon {
-    /* position: relative; */
-    left: auto;
-    top: auto;
-    margin-bottom: 10px;
-  }
-
-  .card-timeline-content {
-    margin-left: 30px;
-    text-align: center;
-  }
-
-  .card-timeline::before {
-    left: 9px;
-    transform: translateX(-50%);
-  }
-}
 
 
 footer .container {

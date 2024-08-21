@@ -128,10 +128,10 @@ sup {
     top: -0.5em;
 }
 
-/* a {
-    color: var(--bs-link-color);
+a {
+    /* color: var(--bs-link-color); */
     text-decoration: underline;
-  } */
+}
 
 a:hover {
     color: var(--bs-link-hover-color);
@@ -566,7 +566,7 @@ ul ol {
 }
 
 .text-black-75 {
-    color: rgba(0, 0, 0, 0.75) !important;
+    color: rgba(0, 0, 0, 0.596) !important;
 }
 
 .text-black-80 {
