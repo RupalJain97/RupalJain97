@@ -629,7 +629,8 @@ header.masthead .h2 {
   position: relative;
   padding: 10px;
   bottom: 0;
-  /* background-color: var(--bs-gray-100); */
+  background-color: var(--bs-gray-100);
+  border-radius: 10px;
 }
 
 #portfolio .container-fluid .portfolio-box :hover,
@@ -639,9 +640,27 @@ header.masthead .h2 {
 #portfolio .container-xl .portfolio-box :hover,
 #portfolio .container-xxl .portfolio-box :hover {
   opacity: 1;
-  bottom: 8px;
+  /* bottom: 8px; */
   transition: bottom 0.25s ease-in-out;
   background-color: var(--bs-white);
+}
+
+
+#portfolio .container-fluid .portfolio-box-header,
+#portfolio .container-sm .portfolio-box-header,
+#portfolio .container-md .portfolio-box-header,
+#portfolio .container-lg .portfolio-box-header,
+#portfolio .container-xl .portfolio-box-header,
+#portfolio .container-xxl .portfolio-box-header {
+  position: relative;
+  display: flex;
+  padding: 0px;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: var(--bs-gray-100);
+  flex-direction: column;
 }
 
 #portfolio .container-fluid .portfolio-box-caption,
@@ -651,28 +670,28 @@ header.masthead .h2 {
 #portfolio .container-xl .portfolio-box-caption,
 #portfolio .container-xxl .portfolio-box-caption {
   /* padding-top: 10px; */
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   position: relative;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  width: 100%;
   bottom: 0;
   text-align: center;
   color: #fff;
-  text-align: center;
   background-color: var(--bs-gray-100);
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 
-#portfolio .container-fluid .portfolio-box-caption .project-image,
-#portfolio .container-sm .portfolio-box-caption .project-image,
-#portfolio .container-md .portfolio-box-caption .project-image,
-#portfolio .container-lg .portfolio-box-caption .project-image,
-#portfolio .container-xl .portfolio-box-caption .project-image,
-#portfolio .container-xxl .portfolio-box-caption .project-image {
+#portfolio .container-fluid .portfolio-box-header .project-image,
+#portfolio .container-sm .portfolio-box-header .project-image,
+#portfolio .container-md .portfolio-box-header .project-image,
+#portfolio .container-lg .portfolio-box-header .project-image,
+#portfolio .container-xl .portfolio-box-header .project-image,
+#portfolio .container-xxl .portfolio-box-header .project-image {
   /* padding-top: 10px; */
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   position: relative;
   align-items: center;
   justify-content: center;
@@ -682,43 +701,110 @@ header.masthead .h2 {
   text-align: center;
 }
 
-#portfolio .container-fluid .portfolio-box-caption .project-header,
-#portfolio .container-sm .portfolio-box-caption .project-header,
-#portfolio .container-md .portfolio-box-caption .project-header,
-#portfolio .container-lg .portfolio-box-caption .project-header,
-#portfolio .container-xl .portfolio-box-caption .project-header,
-#portfolio .container-xxl .portfolio-box-caption .project-header {
-  display: flex;
-  justify-content: space-between;
+
+
+@media (min-width: 576px) {
+
+  #portfolio .container-fluid .portfolio-box-caption .project-header-sm,
+  #portfolio .container-sm .portfolio-box-caption .project-header-sm,
+  #portfolio .container-md .portfolio-box-caption .project-header-sm,
+  #portfolio .container-lg .portfolio-box-caption .project-header-sm,
+  #portfolio .container-xl .portfolio-box-caption .project-header-sm,
+  #portfolio .container-xxl .portfolio-box-caption .project-header-sm {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  #portfolio .container-fluid .portfolio-box-header .project-header-sm,
+  #portfolio .container-sm .portfolio-box-header .project-header-sm,
+  #portfolio .container-md .portfolio-box-header .project-header-sm,
+  #portfolio .container-lg .portfolio-box-header .project-header-sm,
+  #portfolio .container-xl .portfolio-box-header .project-header-sm,
+  #portfolio .container-xxl .portfolio-box-header .project-header-sm {
+    display: none !important;
+    justify-content: space-between;
+  }
+
+  #portfolio .container-fluid .portfolio-box-caption .project-category,
+  #portfolio .container-sm .portfolio-box-caption .project-category,
+  #portfolio .container-md .portfolio-box-caption .project-category,
+  #portfolio .container-lg .portfolio-box-caption .project-category,
+  #portfolio .container-xl .portfolio-box-caption .project-category,
+  #portfolio .container-xxl .portfolio-box-caption .project-category{
+    padding: 10px;
+    background-color: transparent;
+    color: #6f42c1;
+    font-size: small;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #portfolio .container-fluid .portfolio-box-caption .project-date,
+  #portfolio .container-sm .portfolio-box-caption .project-date,
+  #portfolio .container-md .portfolio-box-caption .project-date,
+  #portfolio .container-lg .portfolio-box-caption .project-date,
+  #portfolio .container-xl .portfolio-box-caption .project-date,
+  #portfolio .container-xxl .portfolio-box-caption .project-date {
+    padding: 10px;
+    background-color: transparent;
+    color: #6f42c1;
+    font-size: small;
+    text-align: right;
+    font-weight: bold;
+  }
 }
 
-#portfolio .container-fluid .portfolio-box-caption .project-category,
-#portfolio .container-sm .portfolio-box-caption .project-category,
-#portfolio .container-md .portfolio-box-caption .project-category,
-#portfolio .container-lg .portfolio-box-caption .project-category,
-#portfolio .container-xl .portfolio-box-caption .project-category,
-#portfolio .container-xxl .portfolio-box-caption .project-category {
-  padding: 10px;
-  background-color: transparent;
-  color: #6f42c1;
-  font-size: small;
-  text-align: left;
-  font-weight: bold;
+@media (min-width: 992px) {
+
+  #portfolio .container-fluid .portfolio-box-caption .project-header,
+  #portfolio .container-sm .portfolio-box-caption .project-header,
+  #portfolio .container-md .portfolio-box-caption .project-header,
+  #portfolio .container-lg .portfolio-box-caption .project-header,
+  #portfolio .container-xl .portfolio-box-caption .project-header,
+  #portfolio .container-xxl .portfolio-box-caption .project-header {
+    display: none !important;
+    justify-content: space-between;
+  }
+
+  #portfolio .container-fluid .portfolio-box-header .project-header,
+  #portfolio .container-sm .portfolio-box-header .project-header,
+  #portfolio .container-md .portfolio-box-header .project-header,
+  #portfolio .container-lg .portfolio-box-header .project-header,
+  #portfolio .container-xl .portfolio-box-header .project-header,
+  #portfolio .container-xxl .portfolio-box-header .project-header {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  #portfolio .container-fluid .portfolio-box-header .project-category,
+  #portfolio .container-sm .portfolio-box-header .project-category,
+  #portfolio .container-md .portfolio-box-header .project-category,
+  #portfolio .container-lg .portfolio-box-header .project-category,
+  #portfolio .container-xl .portfolio-box-header .project-category,
+  #portfolio .container-xxl .portfolio-box-header .project-category {
+    padding: 10px;
+    background-color: transparent;
+    color: #6f42c1;
+    font-size: small;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #portfolio .container-fluid .portfolio-box-header .project-date,
+  #portfolio .container-sm .portfolio-box-header .project-date,
+  #portfolio .container-md .portfolio-box-header .project-date,
+  #portfolio .container-lg .portfolio-box-header .project-date,
+  #portfolio .container-xl .portfolio-box-header .project-date,
+  #portfolio .container-xxl .portfolio-box-header .project-date {
+    padding: 10px;
+    background-color: transparent;
+    color: #6f42c1;
+    font-size: small;
+    text-align: right;
+    font-weight: bold;
+  }
 }
 
-#portfolio .container-fluid .portfolio-box-caption .project-date,
-#portfolio .container-sm .portfolio-box-caption .project-date,
-#portfolio .container-md .portfolio-box-caption .project-date,
-#portfolio .container-lg .portfolio-box-caption .project-date,
-#portfolio .container-xl .portfolio-box-caption .project-date,
-#portfolio .container-xxl .portfolio-box-caption .project-date {
-  padding: 10px;
-  background-color: transparent;
-  color: #6f42c1;
-  font-size: small;
-  text-align: right;
-  font-weight: bold;
-}
 
 #portfolio .container-fluid .portfolio-box-caption .project-name,
 #portfolio .container-sm .portfolio-box-caption .project-name,
@@ -726,6 +812,7 @@ header.masthead .h2 {
 #portfolio .container-lg .portfolio-box-caption .project-name,
 #portfolio .container-xl .portfolio-box-caption .project-name,
 #portfolio .container-xxl .portfolio-box-caption .project-name {
+  padding-top: 10px;
   background-color: transparent;
   font-size: 0.55rem;
   font-weight: var(--bs-body-font-weight);
@@ -750,6 +837,7 @@ header.masthead .h2 {
   padding-right: 20px;
   text-align: left;
   margin-bottom: 0.5rem;
+  /* flex-grow: 1; */
 }
 
 #portfolio .container-fluid .portfolio-box-caption .project-description li,
@@ -833,6 +921,9 @@ header.masthead .h2 {
   font-size: 14px;
   font-weight: var(--bs-body-font-weight);
   align-items: center;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: -webkit-fill-available;
 }
 
 #portfolio .container-fluid .portfolio-box-caption .project-skills *,
