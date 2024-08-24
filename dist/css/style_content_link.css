@@ -581,6 +581,26 @@ ul ol {
     color: var(--bs-text-color) !important;
 }
 
+.text-cyan-light {
+    color: var(--main-background-color) !important;
+}
+
+.text-pink {
+    color: var(--bs-code-color) !important;
+}
+
+.text-pink-light {
+    color: var(--bs-code-color-light) !important;
+}
+
+.text-purple {
+    color: var(--bs-purple-main) !important;
+}
+
+.text-purple-light {
+    color: var(--bs-purple-main-light) !important;
+}
+
 .text-white {
     color: rgb(var(--bs-white-rgb)) !important;
 }
