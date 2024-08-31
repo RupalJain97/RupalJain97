@@ -132,43 +132,6 @@ progress {
 }
 
 
-
-.skill {
-    text-align: center;
-    width: 120px;
-}
-
-.skills-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.skills-category {
-    margin-bottom: 30px;
-}
-
-.skills-category .skill-title {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--bs-gray);
-}
-
-.skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.skill-label {
-    /* margin-top: 10px; */
-    font-size: 16px;
-    color: var(--bs-text-color);
-}
-
-
-
-
 /* *************** Circle Progress ****************** */
 
 svg {

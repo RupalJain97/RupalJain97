@@ -730,7 +730,7 @@ header.masthead .h2 {
   #portfolio .container-md .portfolio-box-caption .project-category,
   #portfolio .container-lg .portfolio-box-caption .project-category,
   #portfolio .container-xl .portfolio-box-caption .project-category,
-  #portfolio .container-xxl .portfolio-box-caption .project-category{
+  #portfolio .container-xxl .portfolio-box-caption .project-category {
     padding: 10px;
     background-color: transparent;
     color: #6f42c1;
@@ -912,17 +912,16 @@ header.masthead .h2 {
   text-decoration: none !important;
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
   justify-content: flex-start;
-  gap: 10px;
+  flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   background-color: var(--bs-purple-main-light-2);
   color: var(--bs-body-color);
   font-size: 14px;
   font-weight: var(--bs-body-font-weight);
-  align-items: center;
-  /* position: absolute; */
-  /* bottom: 0; */
+  align-items: flex-start;
   width: -webkit-fill-available;
 }
 
@@ -935,6 +934,66 @@ header.masthead .h2 {
   text-decoration: none !important;
   background-color: transparent;
 }
+
+
+.skill-tags {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: inline-block;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 15px;
+  border: 1px solid var(--bs-code-color);
+  font-size: 13px;
+  font-weight: var(--fw-3);
+  color: black;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+
+.skill {
+  text-align: center;
+  width: 120px;
+}
+
+.skills-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.skills-category {
+  margin-bottom: 30px;
+}
+
+.skills-category .skill-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--bs-gray);
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-label {
+  /* margin-top: 10px; */
+  font-size: 16px;
+  color: var(--bs-text-color);
+}
+
 
 /* ******************** Education and Experience ************************ */
 /* Card Timeline Container */
