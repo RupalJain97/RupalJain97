@@ -919,6 +919,21 @@
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-cyan {
+  --bs-bg-opacity: 1;
+  background-color: var(--bs-horizontal-line-color) !important;
+}
+
+.bg-pink {
+  --bs-bg-opacity: 1;
+  background-color: var(--bs-magenta-font) !important;
+}
+
+.bg-purple {
+  --bs-bg-opacity: 1;
+  background-color: var(--bs-purple-main-light-md) !important;
+}
+
 .bg-page-about {
   background-color: var(--bs-gray-200) !important;
 }

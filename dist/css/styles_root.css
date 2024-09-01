@@ -561,7 +561,7 @@ header.masthead .h2 {
   display: none;
 }
 
-#ResumeContact #verticalLine {
+#contact #verticalLine {
   display: none;
 }
 
@@ -584,11 +584,11 @@ header.masthead .h2 {
   }
 
 
-  #ResumeContact #verticalLine {
+  #contact #verticalLine {
     display: block;
   }
 
-  #ResumeContact hr {
+  #contact hr {
     height: 0.15rem;
     max-width: 150px;
     margin: 1.5rem auto;
@@ -963,7 +963,17 @@ header.masthead .h2 {
 
 .skill {
   text-align: center;
-  width: 120px;
+  /* width: 120px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-progressbar {
+  text-align: center;
+  min-width: 120px;
 }
 
 .skills-section {
@@ -972,26 +982,64 @@ header.masthead .h2 {
 }
 
 .skills-category {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  /* margin-top: 10px; */
+}
+
+.skills-subcategory {
+  display: flex;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .skills-subcategory-md {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  .skills-subcategory-lg {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 576px){
+  .skills-subcategory-sm {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .skills-subcategory-md-2 {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
 }
 
 .skills-category .skill-title {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: var(--bs-gray);
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: var(--bs-pink);
+  margin-top: 20px;
 }
 
 .skills-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .skill-label {
   /* margin-top: 10px; */
-  font-size: 16px;
+  font-size: 14px;
   color: var(--bs-text-color);
+  width: max-content;
 }
 
 

@@ -56,7 +56,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Education/Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education/Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -65,7 +65,7 @@
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead">
+    <header class="masthead" id="about">
         <div class="container pt-3 h-100">
             <div class="row gx-4 gx-lg-5 h-70 align-items-center justify-content-center text-center">
                 <div class="col-lg-5 align-self-center">
@@ -107,116 +107,359 @@
         </div>
     </header>
 
-    <!-- Services-->
-    <!-- Decrease the size of font -->
-    <section class="page-section bg-page-about" id="services">
+    <!-- Services and Skills-->
+    <section class="page-section bg-page-about" id="about">
         <div class="container px-4 px-lg-5">
             <h2 class="text-center text-cyan mt-0">I am skilled at...</h2>
             <hr class="divider divider-cyan" />
             <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-2-5 col-md-4 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2">
-                            <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-dev.svg" width="35"
-                                alt="">
-                        </div>
-                        <div class="fs-6 fw-bold mb-2">Software Engineering</div>
-                        <p class="text-muted mb-0 fs-7">Creating, Designing, Deploying, and Supporting efficient and
-                            scalable
-                            Softwares solutions.</p>
+                <div class="mt-5 text-start">
+                    <div class="mb-2">
+                        <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-dev.svg" width="35"
+                            alt="">
                     </div>
-                </div>
-                <div class="col-lg-2-5 col-md-4 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2">
-                            <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-web.png" width="35"
-                                alt="">
-                        </div>
-                        <div class="fs-6 fw-bold mb-2">Web Developement</div>
-                        <p class="text-muted mb-0 fs-7">High-quality development of websites using modern frameworks and
-                            technologies.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2-5 col-md-4 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2">
-                            <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-database.png"
-                                width="35" alt="">
-                        </div>
-                        <div class="fs-6 fw-bold mb-2">Databases</div>
-                        <p class="text-muted mb-0 fs-7">Designing and Implementing relational and non-relational
-                            databases
-                            (SQL and NoSQL), ensuring efficient data storage, retrieval, and management.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2-5 col-md-4 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2">
-                            <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-cloud.png"
-                                width="35" alt="">
-                        </div>
-                        <div class="fs-6 fw-bold mb-2">Cloud Services</div>
-                        <p class="text-muted mb-0 fs-7">Leveraging cloud platforms for scalable, secure, and efficient
-                            application deployment and management.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2-5 col-md-4 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2">
-                            <img style="padding-top: 0.38rem;"
-                                src="./assets/images/thumbnails/icon-artificial-intelligence.png" width="35" alt="">
-                        </div>
-                        <div class="fs-6 fw-bold mb-2">AI/ML (Academic Experience only)</div>
-                        <p class="text-muted mb-0 fs-7">Building, Training, and Deploying Agents using Neural Networks
-                            and
-                            Reinforcement Learning for advanced pattern recognition and intelligent decision-making.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="fs-6 fw-bold mb-2">Software Engineering</div>
+                    <p class="text-muted mb-0 fs-7">Creating, Designing, Deploying, and Supporting efficient and
+                        scalable
+                        Softwares solutions.</p>
 
-    <!-- Skills -->
-    <section class="page-section" id="ResumeContact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <h2 class="text-cyan mt-0">Skills</h2>
-                    <hr class="divider divider-cyan" />
-                </div>
-                <!-- <div class=" row text-center" id="verticalLine">
-                    <hr class="divider2 divider-grey" />
-                </div> -->
-                <div class="row gx-4 gx-lg-5 pb-2 pb-lg-5 justify-content-center contact">
-                    <div class="skills-category">
-                        <div class="skill-title fst-italic">Programming Languages</div>
+                    <div class="skills-category pt-3">
                         <div class="skills-list">
-                            <div class="skill">
+                            <div class="skill-progressbar">
                                 <div class="skill-label mb-1">Python</div>
                                 <div class="progress progress-sm mr-2">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 90%"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                                 </div>
                             </div>
-                            <div class="skill">
+                            <div class="skill-progressbar">
                                 <div class="skill-label mb-1">C++</div>
                                 <div class="progress progress-sm mr-2">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 90%"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                                 </div>
                             </div>
-                            <div class="skill">
+                            <div class="skill-progressbar">
                                 <div class="skill-label mb-1">Java</div>
                                 <div class="progress progress-sm mr-2">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-subcategory skills-subcategory-md skills-subcategory-sm">
+                            <div class="skills-category">
+                                <div class="skill-title fst-italic">API/Frameworks</div>
+                                <div class="skills-list">
+                                    <div class="skill">
+                                        <div class="skill-label">Django</div>
+                                        <div class="skill-label pt-1">80%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">Flask</div>
+                                        <div class="skill-label pt-1">75%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">RESTful API</div>
+                                        <div class="skill-label pt-1">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-category">
+                                <div class="skill-title fst-italic">Practices</div>
+                                <div class="skills-list">
+                                    <div class="skill">
+                                        <div class="skill-label">Agile</div>
+                                        <div class="skill-label pt-1">90%</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="skills-category">
-                        <div class="skill-title fst-italic">Programming Languages</div>
+
+                </div>
+                <div class="mt-5 text-start">
+                    <div class="mb-2">
+                        <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-web.png" width="35"
+                            alt="">
+                    </div>
+                    <div class="fs-6 fw-bold mb-2">Web Developement</div>
+                    <p class="text-muted mb-0 fs-7">High-quality development of websites using modern frameworks and
+                        technologies.</p>
+                    <div class="skills-category pt-3">
                         <div class="skills-list">
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">JavaScript</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 95%"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Node.js</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 85%"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">R</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 90%"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">HTML/CSS</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 95%"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-subcategory">
+                            <div class="skills-category">
+                                <div class="skill-title fst-italic">API/Frameworks</div>
+                                <div class="skills-list">
+                                    <div class="skill">
+                                        <div class="skill-label">jQuery</div>
+                                        <div class="skill-label pt-1">95%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">D3.js</div>
+                                        <div class="skill-label pt-1">99%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">Express.js</div>
+                                        <div class="skill-label pt-1">90%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">React.js (Familier)</div>
+                                        <div class="skill-label pt-1">65%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">Bootstrap</div>
+                                        <div class="skill-label pt-1">80%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">MERN Stack</div>
+                                        <div class="skill-label pt-1">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mt-5 text-start">
+                    <div class="mb-2">
+                        <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-database.png" width="35"
+                            alt="">
+                    </div>
+                    <div class="fs-6 fw-bold mb-2">Databases</div>
+                    <p class="text-muted mb-0 fs-7">Designing and Implementing relational and non-relational
+                        databases
+                        (SQL and NoSQL), ensuring efficient data storage, retrieval, and management.</p>
+                    <div class="skills-category pt-3">
+                        <div class="skills-list">
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Relational DBMS</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 90%"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">NoSQL</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 70%"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">ETL</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 55%"
+                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Informatica Power BI</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 70%"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-subcategory skills-subcategory-lg skills-subcategory-md-2">
+                            <div class="skills-category">
+                                <div class="skill-title fst-italic">Relational DBMS</div>
+                                <div class="skills-list">
+                                    <div class="skill">
+                                        <div class="skill-label">MySQL</div>
+                                        <div class="skill-label pt-1">90%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">Oracle PLSQL</div>
+                                        <div class="skill-label pt-1">90%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">PostgreSQL</div>
+                                        <div class="skill-label pt-1">80%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">SQLAlchemy (Learning)</div>
+                                        <div class="skill-label pt-1">45%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-category">
+                                <div class="skill-title fst-italic">NoSQL</div>
+                                <div class="skills-list">
+                                    <div class="skill">
+                                        <div class="skill-label">MongoDB</div>
+                                        <div class="skill-label pt-1">75%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">Firebase</div>
+                                        <div class="skill-label pt-1">90%</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-start">
+                    <div class="mb-2">
+                        <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/icon-cloud.png" width="35"
+                            alt="">
+                    </div>
+                    <div class="fs-6 fw-bold mb-2">Cloud Services</div>
+                    <p class="text-muted mb-0 fs-7">Leveraging cloud platforms for scalable, secure, and efficient
+                        application deployment and management.</p>
+                    <div class="skills-category pt-3">
+                        <div class="skills-list">
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Amazon Web Services (AWS)</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Google Cloud Platform (GCP)</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 85%"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-subcategory">
+                            <div class="skills-category">
+                                <div class="skill-title fst-italic">Services: </div>
+                                <div class="skills-list">
+                                    <div class="skill">
+                                        <div class="skill-label">Lambda</div>
+                                        <div class="skill-label pt-1">95%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">CloudWatch RUM</div>
+                                        <div class="skill-label pt-1">85%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">EC2</div>
+                                        <div class="skill-label pt-1">95%</div>
+                                    </div>
+                                    <div class="skill">
+                                        <div class="skill-label">RDS</div>
+                                        <div class="skill-label pt-1">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-start">
+                    <div class="mb-2">
+                        <img style="padding-top: 0.38rem;"
+                            src="./assets/images/thumbnails/icon-artificial-intelligence.png" width="35" alt="">
+                    </div>
+                    <div class="fs-6 fw-bold mb-2">AI/ML (Academic Experience only)</div>
+                    <p class="text-muted mb-0 fs-7">Building, Training, and Deploying Agents using Neural Networks
+                        and
+                        Reinforcement Learning for advanced pattern recognition and intelligent decision-making.</p>
+                    <div class="skills-category pt-3">
+                        <div class="skills-list">
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Neural Network</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 60%"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">BERTweet Model</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 70%"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Reinforcement Learning</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 70%"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">OpenAI Gym</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Apache Lucene</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 80%"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill-progressbar">
+                                <div class="skill-label mb-1">Dialogflow</div>
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 90%"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-start">
+                    <div class="mb-2">
+                        <img style="padding-top: 0.38rem;"
+                            src="./assets/images/thumbnails/icon-artificial-intelligence.png" width="35" alt="">
+                    </div>
+                    <div class="fs-6 fw-bold mb-2">DevOps (Academic Experience only)</div>
+                    <p class="text-muted mb-0 fs-7">Automating, Monitoring, and Managing software deployment pipelines
+                        with CI/CD, Infrastructure as Code, and container orchestration for streamlined development and
+                        reliable operations.</p>
+                    <div class="skills-category pt-3">
+                        <div class="skills-list">
+                            <div class="skill">
+                                <svg class="circular-progress mb-1" style="--progress: 80">
+                                    <circle class="bg">
+                                    </circle>
+                                    <circle class="fg">
+                                    </circle>
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        class="circle-text">8/10</text>
+                                </svg>
+                                <div class="skill-label pt-1">Docker</div>
+                            </div>
                             <div class="skill">
                                 <svg class="circular-progress mb-1" style="--progress: 50">
                                     <circle class="bg">
@@ -224,9 +467,9 @@
                                     <circle class="fg">
                                     </circle>
                                     <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-                                        class="circle-text">50%</text>
+                                        class="circle-text">5/10</text>
                                 </svg>
-                                <div class="skill-label pt-1">JavaScript</div>
+                                <div class="skill-label pt-1">CI/CD Pipelines</div>
                             </div>
                             <div class="skill">
                                 <svg class="circular-progress mb-1" style="--progress: 60">
@@ -235,9 +478,9 @@
                                     <circle class="fg">
                                     </circle>
                                     <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-                                        class="circle-text">60%</text>
+                                        class="circle-text">6/10</text>
                                 </svg>
-                                <div class="skill-label pt-1">Node.js</div>
+                                <div class="skill-label pt-1">Jenkins</div>
                             </div>
                             <div class="skill">
                                 <svg class="circular-progress mb-1" style="--progress: 90">
@@ -246,45 +489,92 @@
                                     <circle class="fg">
                                     </circle>
                                     <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-                                        class="circle-text">90%</text>
+                                        class="circle-text">9/10</text>
                                 </svg>
-                                <div class="skill-label pt-1">Docker</div>
+                                <div class="skill-label pt-1">GIT</div>
                             </div>
                             <div class="skill">
-                                <svg class="circular-progress mb-1" style="--progress: 80">
+                                <svg class="circular-progress mb-1" style="--progress: 60">
                                     <circle class="bg">
                                     </circle>
                                     <circle class="fg">
                                     </circle>
                                     <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-                                        class="circle-text">80%</text>
+                                        class="circle-text">6/10</text>
                                 </svg>
-                                <div class="skill-label pt-1">AWS</div>
+                                <div class="skill-label pt-1">GitLab</div>
                             </div>
-
+                            <div class="skill">
+                                <svg class="circular-progress mb-1" style="--progress: 90">
+                                    <circle class="bg">
+                                    </circle>
+                                    <circle class="fg">
+                                    </circle>
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        class="circle-text">9/10</text>
+                                </svg>
+                                <div class="skill-label pt-1">GitHub Workflows</div>
+                            </div>
+                            <div class="skill">
+                                <svg class="circular-progress mb-1" style="--progress: 40">
+                                    <circle class="bg">
+                                    </circle>
+                                    <circle class="fg">
+                                    </circle>
+                                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                                        class="circle-text">4/10</text>
+                                </svg>
+                                <div class="skill-label pt-1">Kubernetes (Learning)</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skills-category">
-                        <div class="skill-title fst-italic">Containerization</div>
-                        <div class="skills-list">
-                            <div class="skill">
-                                <div class="skill-label">Docker</div>
-                                <div class="skill-label pt-1">90%</div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-label">Kubernetes</div>
-                                <div class="skill-label pt-1">75%</div>
-                            </div>
+                </div>
+
+                <div class="skills-category pt-4">
+                    <div class="skill-title fst-italic">OS Platforms</div>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <div class="skill-label">Windows</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Unix (Linux)</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">MAC</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="skill-title fst-italic">Interpersonal Skills</div>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <div class="skill-label">Adaptive</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Self-Starter</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Analytical</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Problem-Solver</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Debugging and Troubleshooting</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Strong Communication</div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+        </div>
     </section>
 
     <!-- Education-->
-    <section class="page-sectionbg-page-about" id="education">
+    <section class="page-section " id="education">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-12 text-center">
@@ -1328,7 +1618,40 @@
                                 <i class="text-purple bi bi-github fs-4"></i>
                                 <i class="text-purple bi bi-play-circle-fill  fs-4"></i>
                                 <i class="text-purple bi bi-file-pdf-fill  fs-4"></i>
-                            </div> -->
+                            </div> 
+                            <div class="text-black">
+                                <div class="btn btn-circle btn-pink btn-md-2">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-pink btn-sm">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-pink btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-info btn-icon-split">
+                                    <span class="icon text-black">
+                                        <i class="bi bi-file-earmark-text"></i>
+                                    </span>
+                                    <span class="text text-cyan align-self-center"> Letter</span>
+                                </a>
+                                <div class="btn btn-circle btn-pink btn-md">
+                                    <i class="bi bi-file-earmark-text "></i>
+                                </div>
+                                <div class="btn btn-circle btn-cyan btn-md">
+                                    <i class="bi bi-file-earmark-text "></i>
+                                </div>
+                                <div class="btn btn-circle btn-grey btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-grey-cyan btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-grey-pink btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                            </div>
+                            -->
 
                         </div>
                     </div>
@@ -1439,38 +1762,7 @@
                                     href="./assets/documents/Rupal Jain_Girls-Who-Code_RL.pdf" target="_blank">
                                     <i class="bi bi-file-earmark-text "></i>
                                 </a>
-                                <div class="text-black">
-                                    <div class="btn btn-circle btn-pink btn-md-2">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <div class="btn btn-circle btn-pink btn-sm">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <div class="btn btn-circle btn-pink btn-md">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <a href="#" class="btn btn-outline-info btn-icon-split">
-                                        <span class="icon text-black">
-                                            <i class="bi bi-file-earmark-text"></i>
-                                        </span>
-                                        <span class="text text-cyan align-self-center"> Letter</span>
-                                    </a>
-                                    <div class="btn btn-circle btn-pink btn-md">
-                                        <i class="bi bi-file-earmark-text "></i>
-                                    </div>
-                                    <div class="btn btn-circle btn-cyan btn-md">
-                                        <i class="bi bi-file-earmark-text "></i>
-                                    </div>
-                                    <div class="btn btn-circle btn-grey btn-md">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <div class="btn btn-circle btn-grey-cyan btn-md">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <div class="btn btn-circle btn-grey-pink btn-md">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1553,7 +1845,7 @@
     </section>
 
     <!-- Contact-->
-    <section class="page-section" id="ResumeContact">
+    <section class="page-section" id="contact">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-12 text-center">
