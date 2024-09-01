@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupal Jain</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" class="fa-solid fa-square-r" href="./assets/images/title2.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_avatar.jpg" alt="Rupal Jain" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Rupal Jain">Rupal Jain</h1>
+
+          <p class="title" style="text-align: center;">Master's in Computer Science <br> The University of Arizona
+            <br> Graduated: May 2024
+          </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Tucson, Arizona, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jainrupal@arizona.edu" class="contact-link">jainrupal@arizona.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+15203437924" class="contact-link">+1 (520) 343-7924</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/cv.png" alt="CV icon" width="30">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Resume</p>
+              <a href="assets/documents/Rupal_Jain_Resume.pdf" class="contact-link" target="_blank"
+                data-en="Resume">Resume</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/cover-letter.png" alt="CV icon" width="30">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Cover Letter</p>
+              <a href="assets/documents/Rupal_Jain_Cover_Letter.pdf" class="contact-link" target="_blank"
+                data-en="Cover Letter">Cover Letter</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/rupaljain9727/" class="contact-link"><u>rupaljain9727</u></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/RupalJain97?tab=repositories" class="contact-link"><u>RupalJain97</u></a>
+            </div>
+
+          </li>
+        </ul>
+
+        <!-- <div class="separator"></div> -->
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education/Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+
+          <p>
+            Hello and Welcome to my Portfolio!! Here is a quick intro about me!
+
+          </p>
+          <ol style="margin-left: 20px;">
+            <li style="list-style: circle !important; padding-left: 10px;">
+              Graduated with Master of Science degree in Computer Science program from The University of Arizona in May
+              2024.
+            </li>
+
+            <li style="list-style: circle !important; padding-left: 10px;">
+              Most Recently interned at Resilient Software Security, AZ as a Software Developer during Summer 2023.
+            </li>
+            <li style="list-style: circle !important; padding-left: 10px;">
+              Prior work experience of 3 years as SDE at Tata Consultancy Services.
+            </li>
+            <li style="list-style: circle !important; padding-left: 10px; color: hsl(45, 44%, 58%)">
+              <b>Looking for full-time job opportunities in Software Engineering roles starting May 2024.</b>
+            </li>
+          </ol>
+
+          <!-- <p>
+            Hello and welcome! I am a passionate Software Developer with a deep-rooted commitment to crafting innovative
+            software solutions. I was born and raised in Delhi, India in 1997, I embarked on my journey into the realm
+            of technology with a Bachelor's degree in Computer Science & Engineering from Guru Gobind Singh Indraprastha
+            University in May 2019. I then worked as a Software Developer, leading application development and database
+            migration projects. Seeking to advance my studies, I received an offer to pursue a Master's degree at
+            The University of Arizona.
+          </p>
+
+          <p>
+            Throughout my evolving career, I've garnered expertise in diverse domains ranging from front-end development
+            and back-end solutions to database management and cloud services. I thrive on collaborating with
+            cross-functional teams, leading projects from inception to deployment, and staying abreast of emerging
+            technologies that challenge the status landscape.
+          </p>
+
+          <p>
+            Beyond the nuances of code, I prioritize collaboration and growth. I stay updated on industry trends to
+            ensure my solutions are forward-thinking. Eager to connect with peers, I actively seek opportunities to
+            contribute to meaningful tech projects that drive innovation.
+          </p>-->
+
+          <p>
+            <br>
+            Thank you for visiting my portfolio. I invite you to explore my professional work, delve into my projects,
+            and reach out
+            to discuss potential collaborations or insights into the fascinating world of software development.
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">I'm Skilled at</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Software Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  Creating, Designing, Deploying and Supporting efficient and scalable Softwares.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-web.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites using modern frameworks and technologies.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-database.png" alt="DBMS icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DBMS</h4>
+
+                <p class="service-item-text">
+                  Designing and Implementing RDBMS using SQL, ensuring efficient data storage, retrieval, and
+                  management.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cloud.png" alt="Cloud services icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud services</h4>
+
+                <p class="service-item-text">
+                  Leveraging cloud services for scalable, secure, and efficient application deployment and management.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-artificial-intelligence.png" alt="Cloud services icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI/ML (Academic Experience only)</h4>
+
+                <p class="service-item-text">
+                  Building, Training, and Deploying Neural Networks for advanced pattern recognition and intelligent
+                  decision-making.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/refer1.jpeg" alt="Brook Schoenfield" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Brook Schoenfield</h4>
+
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Ms. Jain helped us take a javascript app from "works in a test environment" to cloud, AWS lambda
+                    production. Thank you so very much. There were coding issues, language issues, configuration
+                    changes, container images to sort. Many problems to solve getting the app to run properly and
+                    reliably.
+                    <br>
+                    Importantly, Ms. Jain demonstrates incredible perseverance, often in the face of opaque challenges
+                    requiring dedicated and focused research and experimental patience.
+                    <br>
+                    I can wholeheartedly endorse Ms. Jain to any organization that needs someone motivated to deliver,
+                    where delivery is contingent upon surmounting challenges and discovering solutions.
+                    <br>
+                    Plus, she is a delight to work with, highly professional and personable.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/refer2.jpeg" alt="Damilare D. Fagbemi" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Damilare D. Fagbemi</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    We have been very thankful to have Rupal Jain working with us over the summer as a Software
+                    Engineer. She’s played a very important role in the development of a web, cloud, and container-based
+                    SaaS platform.
+                    <br>
+                    Rupal is a dedicated, driven, and creative problem solver. She takes direction very well, without
+                    requiring micromanagement. Wherever she needs to pick up a new skill to fulfil a task, she’s happy
+                    and willing to do so. She is also a joy to work with and a great team player.
+                    <br>
+                    Rupal will be an asset to any team, and I’m glad to recommend her.
+                  </p>
+                  <div class="project-body-link">
+                    <a href="./assets/documents/RupalJain-Recommendation_Letter.pdf" target="_blank"><span
+                        class="project-body-link-item">- Letter</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/refer1" alt="Brook Schoenfield" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Brook Schoenfield</h4>
+
+              <time datetime="2021-06-14" data-modal-time></time>
+
+              <div data-modal-text>
+                <p>
+                  Ms. Jain helped us take a javascript app from "works in a test environment" to cloud, AWS lambda
+                  production. Thank you so very much. There were coding issues, language issues, configuration changes,
+                  container images to sort. Many problems to solve getting the app to run properly and reliably.
+                  <br>
+                  Importantly, Ms. Jain demonstrates incredible perseverance, often in the face of opaque challenges
+                  requiring dedicated and focused research and experimental patience.
+                  <br>
+                  I can wholeheartedly endorse Ms. Jain to any organization that needs someone motivated to deliver,
+                  where delivery is contingent upon surmounting challenges and discovering solutions.
+                  <br>
+                  Plus, she is a delight to work with, highly professional and personable.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - Volunteering
+        -->
+
+        <section class="volunteer">
+
+          <h3 class="h3 volunteer-title">Volunteering</h3>
+
+          <ul class="volunteer-list">
+
+            <li class="volunteer-item">
+
+              <div class="volunteer-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Software Development icon" width="40">
+              </div>
+
+              <div class="volunteer-content-box">
+                <h4 class="h4 volunteer-item-title">Girls Who Code - Facilitator</h4>
+                <h5 class="volunteer-subtitle">Aug 2023 - Present</h5>
+
+                <p class="volunteer-item-text">
+                  As a facilitator for Girls Who Code, I guided participants in coding exercises, emphasizing
+                  confidence, collaboration, and creativity. I also stressed essential soft skills crucial for success
+                  in tech.
+                </p>
+
+              </div>
+              <figure class="volunteer-item-img">
+                <img src="./assets/images/gwc.jpeg" alt="Girls Who Code" width="300">
+              </figure>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Skills
+        -->
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-content content-card">
+
+            <!-- Programming Languages -->
+            <li class="skills-list-parent" style="padding-right: 15px !important;">
+              <h4 class="h4 skills-title">Programming Languages</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/c++.png" alt="C++ icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">C/C++</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/python.png" alt="Python icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Python</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/java.png" alt="Java icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Java</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/r.jpeg" alt="R icon" width="50px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">R</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/swift.jpg" alt="R icon" width="50px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Swift (Learning)</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Machine Learning -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Machine Learning</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/nn.png" alt="Neural Network icon" width="50px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Neural Network</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/twitter.png" alt="BERTweet Model icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">BERTweet Model</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/lucene.png" alt="Lucene Library icon" width="60px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Apache Lucene</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/reinforlearning.png" alt="Lucene Library icon" width="55px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Reinforcement Learning</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/openai_gym.png" alt="Lucene Library icon" width="50px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">OpenAI Gym</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Cloud Services -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Cloud Services</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/aws.png" alt="AWS icon" width="60px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">AWS Cloud Services</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/gcp.png" alt="GCP icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Google Cloud Platform</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Web Development -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Web Development</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/node.png" alt="Node.js icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Node.js</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/js.png" alt="JavaScript icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">JavaScript</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/html,css.png" alt="HTML/CSS icon" width="55px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">HTML/CSS</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/json.jpeg" alt="JSON icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">JSON</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/react.png" alt="REACT icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">React.js</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/mern.png" alt="MERN icon" width="50px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">MERN Stack</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/socket.png" alt="MERN icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Socket.io</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/ajax.jpg" alt="MERN icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">AJAX</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Databases -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Databases</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/mysql.png" alt="MySQL icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">MySQL</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/oracle.png" alt="Oracle icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Oracle</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/teradata.png" alt="Teradata icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Teradata</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/mongodb.png" alt="MongoDB icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">MongoDB</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/firebase.png" alt="Firebase icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Firebase</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/postgresql.png" alt="PostgreSQL icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">PostgreSQL</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- OS -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">OS</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/unix.jpg" alt="MySQL icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Unix (Linux)</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/windows.png" alt="Oracle icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Windows</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/mac.png" alt="Teradata icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">MAC</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Frameworks & APIs -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Frameworks & APIs</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/jquery.png" alt="jQuery icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">jQuery</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/express.png" alt="Express icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Express.js</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/flask.jpg" alt="Flask icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Flask</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/bootstrap.png" alt="Bootstrap icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Bootstrap</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/restapi.png" alt="RESTApi icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">RESTApi</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/d3.jpeg" alt="D3.js icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">D3.js</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/jotform.png" alt="JotForm icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">JotForm</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/pygame.png" alt="jQuery icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Pygame</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/agile.png" alt="Putty icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Agile Practices</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Software/Tools -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Software/Tools</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/informatica.png" alt="Informatica icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Informatica</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/docker.png" alt="Docker icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Docker</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/dialogflow.jpeg" alt="Dialogflow icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Dialogflow</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/putty.png" alt="Putty icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Putty</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/jira.png" alt="Putty icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Jira</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/confluence.png" alt="Putty icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Confluence</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/colab.png" alt="Putty icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Colab</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/jupyter.png" alt="Putty icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Jupyter</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </li>
+
+            <!-- Deployment -->
+            <li class="skills-list-parent">
+              <h4 class="h4 skills-title">Deployment</h4>
+              <ul class="skills-list">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/docker.png" alt="Docker icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Docker</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/git.png" alt="GIT icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">GIT</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/gitlab.png" alt="GitLab icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">GitLab</h5>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/jenkins.png" alt="Putty icon" width="45px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Jenkins</h5>
+                  </div>
+
+                </li>
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/skills/github.png" alt="Putty icon" width="40px">
+                  </div>
+                  <div class="skills-content-box">
+                    <h5 class="h5">Github Actions</h5>
+                  </div>
+
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!-- Interpersonal Skills -->
+        <section class="interpersonalskill">
+
+          <h3 class="h3 interpersonalskill-title">Interpersonal skills</h3>
+
+          <ul class="interpersonalskill-content content-card">
+
+            <li class="interpersonalskill-item">
+              <h5 class="h5">Adaptive</h5>
+            </li>
+            <li class="interpersonalskill-item">
+              <h5 class="h5">Self-starting</h5>
+            </li>
+            <li class="interpersonalskill-item">
+              <h5 class="h5">Problem Solving</h5>
+            </li>
+            <li class="interpersonalskill-item">
+              <h5 class="h5">Triaging</h5>
+            </li>
+            <li class="interpersonalskill-item">
+              <h5 class="h5">Debugging</h5>
+            </li>
+            <li class="interpersonalskill-item">
+              <h5 class="h5">Analytical</h5>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME: Exprience and Education
+      -->
+
+      <article class="education/experience" data-page="education/experience">
+
+        <header>
+          <h2 class="h2 article-title">Education/Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The University of Arizona</h4>
+
+              <span>Master of Science in Computer Science</span>
+
+              <span>August 2022 — May 2024</span>
+
+              <p class="timeline-text">
+                <b>Related Coursework</b>: Artificial Intelligence, Data Visualization, Text Retrieval and Web Search,
+                Computer
+                Security, Algorithm, DBMS, Software Engineering, Principles of Networking.
+                <br>
+                GPA: 3.63 (out of 4)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Guru Gobind Singh Indraprastha University</h4>
+
+              <span>Bachelor of Technology in Computer Science & Engineering</span>
+
+              <span>August 2015 — May 2019</span>
+
+              <p class="timeline-text">
+                <b>Related Coursework</b>: Artificial Intelligence, Data Structure, Object oriented Programming, DBMS,
+                Algorithms, Softwre Engineering, Compiler Design, Web Development, Information Security, Machine
+                Learning.
+                <br>
+                <b>Grade: 86.4%</b>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graduate Teaching Assistant</h4>
+
+              <span>CSC/ECE Department, The University of Arizona</span>
+
+              <span>Sept 2023 - May 2024</span>
+
+              <p class="timeline-text">
+                Course: CSC 536 - Software Engineering - Spring 2024<br>
+                Course: CSC 346 - Cloud Computing - Spring 2024 <br>
+                Course: ECE 413/513 - Web Development and the Internet of Things - Fall 2023
+                <br>
+
+                <br>
+                <b>Skills</b>: Amazon Web Services (AWS) · Internet of Things (IoT) · Cloud Computing · Node.js ·
+                JavaScript ·
+                HTML · MongoDB · RESTful · Embedded Programming · Leadership · Technical Assistance · Agile Methodology
+                <br>
+                <br>
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+
+              <span>Resilient Software Security, Phoenix, AZ, USA</span>
+              <span>May 2023 - Aug 2023</span>
+
+              <span>
+                <ul class="timeline-text">
+                  <li>Automated client’s software security analysis report generation reducing manual processing time
+                    from a week to few minutes</li>
+                  <li>Deployed report generation algorithm on AWS Lambda function using Docker container images</li>
+                  <li>Integrated JotForm API, AWS (Lambda, ECR for data storage, Secret manager), GCP (Google API for
+                    email) using JavaScript (JS)</li>
+                  <li>Wrote algorithm to decode JotForm multipart responses to a specific JSON format for AWS Lambda
+                    HTTP API gateway input</li>
+                  <li>Employed GitHub Actions for Cloud Deployment. Documented complete architectural decisions report.
+                    Used Asana for task tracking</li>
+
+                </ul>
+                <p class="timeline-text">
+                  <br>
+                  <b>Skills</b>: JavaScript ES Module · Amazon Web Services · Google Cloud Platform · Docker · Encoding
+                  & Decoding · Cloud Deployment · GitHub Actions
+                  <br>
+                  <br>
+                </p>
+
+              </span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer</h4>
+
+              <span>Tata Consultancy Services, Mumbai, India</span>
+              <span>July 2019 - July 2022</span>
+
+              <ul class="timeline-text">
+                <li>Involved in development, troubleshooting, code review & deployment (in Jenkins) of TCS internal
+                  career portal using Maven, Java</li>
+                <li>Optimized extensive SQL queries, achieving 50% reduction in run-time cost. Conducted GDPR/CCPA Audit
+                  for the project</li>
+                <li>Worked in Client’s backend database team, conducted database system migration from SAP ECC to SAP
+                  S/4 HANA version</li>
+                <li>Revamped legacy code mapping in Informatica, migrated technical metadata to stored procedures,
+                  adhering to Agile practices</li>
+
+              </ul>
+              <p class="timeline-text">
+                <br>
+                <b>Achievements</b>: Successfully cleared TCS Digital Capability Assessment, a company-wide examination
+                followed by an interview, where selected employees are moved to "TCS DIGITAL CADRE," a group of elite
+                associates in TCS.
+                <br>
+                <br>
+                <b>Skills</b>: Java · Maven · PL/SQL · SQL · Informatica Powercenter · Teradata · Code Debugging ·
+                Leadership · Agile Methodology
+                <br>
+                <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
+
+              <span>Utopian Dreams Pvt., New Delhi, India</span>
+              <span>June 2018 - Aug 2018</span>
+
+              <ul class="timeline-text">
+                <li>Added CSV Export/Import functionality in a FinTech platform, using Node-xlsx, XLSX JavaScript
+                  library with PostgreSQL database</li>
+                <li>Added location functionality using Google Maps API and statistical charts using Highcharts API for
+                  nice visual data interpretation</li>
+
+              </ul>
+              <p class="timeline-text">
+                <br>
+                <b>Skills</b>: Node.js · JavaScript · XLSX Library · PostgreSQL · Highcharts API · Google Maps API ·
+                Geocoding · Deployment
+                <br>
+                <br>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI/ML</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Software Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Visualization</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Security</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI/ML</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Software Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Visualization</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Security</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Breakout Game by AI -->
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_breakout_ai.jpg" alt="Breakout Game by AI">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Artificial Intelligence</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2024</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Breakout_AI" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Breakout Game by AI</h3>
+                <h5 class="project-subtitle">Introduction to Artificial Intelligence</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Develop an AI agent capable of learning and mastering the Breakout game using
+                    Q-Learning and Approximate Q-Learning techniques.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Implemented custom game environment with Pygame, and train AI agents using
+                    reinforcement learning algorithms integrated with OpenAI Gym structures.
+                  </li>
+                  <li>
+                    <b>Focus: </b> Compare the performance and learning efficiency of Q-Learning versus Approximate
+                    Q-Learning by varying learning rates, epsilon values, discount factors and number of episodes.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> The Approximate Q-Learning agent consistently achieved higher rewards and greater
+                    efficiency, demonstrating the effectiveness of feature-based learning in dynamic environments.
+                  </li>
+                </ul>
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/ai/Final_Project_Report_jainrupal.pdf" target="_blank">
+                    <span class="project-body-link-item">- Report</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Reinforcement
+                  Learning - Q-Learning</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Approximate
+                  Q-Learning</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">OpenAI Gym</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Pygame</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Python</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Matplotlib</span>
+              </div>
+            </li>
+
+            <!-- UA Badminton Tournament -->
+            <li class="project-item active" data-filter-item data-category="software development">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_UABadminton.jpg" alt="Software Engineering Project ">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Software Dev.</p>
+                  <span class="dot"></span>
+                  <p class="project-category">Automation</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2023</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/UA-Badminton-Tournament-Project" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">UA Badminton Tournament</h3>
+
+                <h5 class="project-subtitle">Software Engineering</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Developed a user-friendly tournament management system for The University of
+                    Arizona Badminton Club to streamline event organization and reduce manual efforts.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Implemented automated features for tasks such as player registration, seeding,
+                    draw creation, and match management. Integrated with an intuitive web interface for both organizers
+                    and participants, supported by robust database design.
+                  </li>
+                  <li>
+                    <b>Focus: </b>Addressed the UA Badminton Club's challenge with an efficient, cost-effective
+                    solution.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Created a streamlined system to enhance tournament organization for the UA Badminton
+                    Club
+                  </li>
+                </ul>
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/software_dev/UA_Badminton_Tour_PPT.pdf" target="_blank">
+                    <span class="project-body-link-item">- PPT</span>
+                  </a>
+
+                  <span class="dot"></span>
+                  <a href="./assets/documents/projects/software_dev/UA_Badminton_Tour_Final_Report.pdf" target="_blank">
+                    <span class="project-body-link-item">Report</span>
+                  </a>
+                  <span class="dot"></span>
+                  <a href="./assets/documents/projects/software_dev/UA_Badminton_Tour_Demo.mp4" target="_blank">
+                    <span class="project-body-link-item">Demo</span>
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Flask</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">PostgreSQL</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">AWS RDS &
+                  EC2</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Agile
+                  Practices</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">SQL</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Python</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">JavaScript</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">HTML/CSS</span>
+              </div>
+            </li>
+
+            <!-- Hate Speech Detection in Tweets -->
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_hatespeech2.jpg" alt="Hate Speech Detection in Tweets">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Artificial Intelligence</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2023</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Hate-Speech-Detection-Tweets" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Hate Speech Detection in Tweets</h3>
+                <h5 class="project-subtitle">Text Retrieval & Web Search</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Address hate speech and abusive language in tweets using AI-based text detection
+                    to promote non-biased content generation.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Developed an AI system using Jupyter Notebooks, fine-tuning the BERTweet model
+                    and merging datasets. The tweets processed by the model, when passed as queries, were integrated
+                    with a hate speech lexicon and Lucene for efficient retrieval.
+                  <li>
+                    <b>Focus: </b>Trained with BERTweet, optimized hyperparameters, and integrated lexicon-based
+                    techniques for refined hate speech detection.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Enhanced hate speech identification, addressing online abuse and encouraging
+                    positive social media engagement.
+                  </li>
+                </ul>
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/ai/Hate_Speech_Detection_in_Tweets.pdf" target="_blank">
+                    <span class="project-body-link-item">- Report</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Neural
+                  Network</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Lucene
+                  Library</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Twitter API</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">BERTweet
+                  Model</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Maven</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Java</span>
+              </div>
+            </li>
+
+            <!-- Artificial Intelligence Chatbot -->
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_chatbot.jpg" alt="Artificial Intelligence Chatbot">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Artificial Intelligence</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2019</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Artificial-Intelligence-Chatbot" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Student Support System - AI Chatbot</h3>
+
+                <h5 class="project-subtitle">Undergrad Major Project</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Developed the Career Counselling website to assist students in choosing the right
+                    educational stream after 10th and 12th grade.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Integrated an AI chatbot, 'Cary,' enabling students to obtain instant guidance
+                    and facilitate appointments with counselors for personalized consultations.
+                  </li>
+                  <li>
+                    <b>Focus: </b>Empowered students with an interactive platform for stream selection guidance and
+                    direct counselor consultations.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Established a user-friendly platform connecting students with resources and expert
+                    guidance for educational decision-making.
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Google Cloud
+                  Platform</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Dialogflow</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Firebase DB</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Express</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Socket.io</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Node.js</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">JavaScript</span>
+                <span class="project-footer-body-item"
+                  style="background-color: var(--light-gray)">HTML/CSS/Boostrap</span>
+              </div>
+            </li>
+
+            <!-- Rolling Dice -->
+            <li class="project-item active" data-filter-item data-category="software development">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_rollingdice.png" alt="Rolling Dice">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Game Development</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">December 2017</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Rolling-Dice" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Rolling Dice</h3>
+                <h5 class="project-subtitle">Board Game</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Develop a multiplayer game that mirrors the essence of classic board games like
+                    Snake and Ladder.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Utilized C++ programming to create a game environment where players navigate
+                    through a board, encountering hidden tasks and abiding by predefined rules, all controlled via
+                    keyboard inputs.
+                  </li>
+                  <li>
+                    <b>Focus: </b> Provide an engaging gaming experience that incorporates elements of chance and
+                    strategy, akin to traditional board games, enhancing user interaction and enjoyment.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Interactive C++ game with elements of luck and strategy, reminiscent of classic
+                    board games.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Graphics
+                  Library</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Turbo C++</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">C++</span>
+              </div>
+            </li>
+
+            <!-- Rubik Solver -->
+            <li class="project-item active" data-filter-item data-category="software development">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_rubikcube.jpg" alt="Rubik Solver">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Game Development</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">December 2017</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Rubik-Solver" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Rubik Solver</h3>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Develop a versatile tool for solving the Rubik's Cube, offering both manual and
+                    computer-assisted methods.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Implemented Rubik's cube algorithm and integrated user-friendly manual move
+                    options for enhanced versatility.
+                  </li>
+                  <li>
+                    <b>Focus: </b> Aims to simplify and expedite the Rubik's Cube solving process, catering to both
+                    enthusiasts looking to solve manually and those seeking automated solutions.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Offered users a comprehensive tool that caters to diverse solving needs, enhancing
+                    overall user experience and efficiency.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">C++</span>
+              </div>
+            </li>
+
+            <!-- Computer Security -->
+            <li class="project-item active" data-filter-item data-category="security">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_security.jpg" alt="Computer Security">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Security</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">December 2022</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Computer-Security-Project" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class="h3 project-title">Security Analysis of Cryptocurrency Exchanges</h3>
+                <h5 class="project-subtitle">Computer Security</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Examine security practices of leading cryptocurrency exchanges like Binance, FTX,
+                    Coinbase, KuCoin, and BitFinex.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Use CryptoGuard for vulnerability analysis and risk assessment.
+                  </li>
+                  <li>
+                    <b>Focus: </b>Study of cryptocurrency exchange major attacks, assess data management, private key
+                    protection, and identify potential vulnerabilities.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Enhance exchange security and formulate mitigation strategies against coin theft
+                    threats.
+                  </li>
+                </ul>
+
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/security/CSC 566_Research_project.pdf" target="_blank">
+                    <span class="project-body-link-item">- PPT</span>
+                  </a>
+
+                  <span class="dot"></span>
+                  <a href="./assets/documents/projects/security/Security_Analysis_of_Cryptocurrency_Exchanges.pdf"
+                    target="_blank">
+                    <span class="project-body-link-item">Research Paper</span>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">HTTP
+                  protocol</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">MD5 Hashing</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Java</span>
+              </div>
+            </li>
+
+            <!-- Advance Data Visualization -->
+            <li class="project-item active" data-filter-item data-category="data visualization">
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj-tomcat.png" alt="Advance Data Visualization">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Data Visualization</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2023</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Adv-Data-Visualization-Project" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Advance Data Visualization</h3>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Developed ToMCAT Offline Viz for analyzing human physiological data to understand
+                    team interactions and cognitive processes.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Developed an all-in-one tool, integrated fNIRS, eye tracking, and EEG for
+                    comprehensive analysis, featuring signal views, a comparison slider, and synchronized timestamps for
+                    focused analysis.
+                    <!-- Integrated fNIRS, eye tracking, and EEG into a tool with signal views, a comparison slider, and synchronized timestamps. -->
+                  </li>
+                  <li>
+                    <b>Focus: </b> Empowered scientists with insights into cognitive and neural mechanisms for effective
+                    team coordination.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Produced a user-friendly tool for data-driven insights to optimize team performance.
+                  </li>
+                </ul>
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/data_viz/ToMCAT-Offline-Viz.pdf" target="_blank">
+                    <span class="project-body-link-item">- PPT</span>
+                  </a>
+
+                  <span class="dot"></span>
+                  <a href="./assets/documents/projects/data_viz/ToMCAT_Offline_Viz_Report.pdf" target="_blank">
+                    <span class="project-body-link-item">Research Paper</span>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Superimpose</span>
+                <span class="project-footer-body-item"
+                  style="background-color: var(--light-gray-70)">Juxtaposition</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">QtGraph</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">MNE Library</span>
+
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Python</span>
+              </div>
+            </li>
+
+            <!-- Data Visualization Techniques -->
+            <li class="project-item active" data-filter-item data-category="data visualization">
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_dataviz.jpg" alt="Data Visualization Techniques">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Data Visualization</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2023</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/data-visualization-techniques" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Data Visualization Techniques</h3>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Showcase data visualization techniques with d3.js, highlighting its prowess in
+                    crafting interactive visualizations for diverse data sets.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Techniques including brushable scatterplot matrices, parallel coordinates,
+                    treemaps, volume rendering, and vector field visualization with d3.js and VTK library, integrating
+                    3D rendering and specific dataset encoding.
+                  </li>
+                  <li>
+                    <b>Focus: </b> Showcase visualization techniques using d3.js for interactive data representation.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Robust platform demonstrating the versatility of d3.js through a range of advanced
+                    visualizations.
+                  </li>
+                </ul>
+
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/data_viz/data_viz_techniques_DEMO.mp4" target="_blank">
+                    <span class="project-body-link-item">- DEMO</span>
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">D3.js</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">VTK Library</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">JavaScript</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">HTML/CSS</span>
+              </div>
+            </li>
+
+            <!-- Cloudexo -->
+            <li class="project-item active" data-filter-item data-category="web development">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_cloudexo.JPG" alt="cloudexo">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Web Development</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2019</time>
+                  <span class="dot"></span>
+
+                  <a href="https://github.com/RupalJain97/Cloudexo" target="_blank">
+                    <div class="icon">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                  </a>
+
+                </div>
+
+                <h3 class=" h3 project-title">Cloudexo</h3>
+
+                <h5 class="project-subtitle">Online Storage</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Developed a user-friendly frontend interface for Cloudexo, an online storage
+                    platform, using HTML/CSS, JavaScript, and Bootstrap.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Utilized web development technologies such as HTML for structure, CSS for
+                    styling, JavaScript for interactivity, and Bootstrap for responsive design.
+                  </li>
+                  <li>
+                    <b>Focus: </b> Prioritized user experience and responsiveness to ensure seamless navigation and
+                    interaction with Cloudexo's storage functionalities.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Successfully implemented a frontend interface that enhances user accessibility and
+                    engagement with Cloudexo's online storage features.
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Express</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Bootstrap</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">Node.js</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">JavaScript</span>
+                <span class="project-footer-body-item"
+                  style="background-color: var(--light-gray)">HTML/CSS/Boostrap</span>
+              </div>
+            </li>
+
+            <!-- Security Assessment Report - Internship-->
+            <!-- <li class="project-item active" data-filter-item data-category="ai/ml">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj-internship.jpg" alt="Security Assessment Report">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Artificial Intelligence</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">August 2023</time>
+                </div>
+
+                <h3 class=" h3 project-title">Security Assessment Report</h3>
+                <h5 class="project-subtitle">Internship @Resilient Software Security</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Automate security analysis report generation and enhance deployment efficiency
+                    using AWS and JavaScript technologies.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Utilized AWS Lambda, integrating JotForm API. Docker containers optimized the
+                    report algorithm deployment. JotForm responses were formatted to JSON for AWS Lambda compatibility,
+                    and GitHub Actions streamlined the deployment workflow. Reports were stored and shared with
+                    customers via Google Cloud Platform (GCP).
+                  </li>
+                  <li>
+                    <b>Focus: </b>Concentrated on automating report generation, ensuring seamless integration, and
+                    optimizing deployment processes.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Achieved automated security analysis report generation, improved deployment
+                    efficiency, and developed comprehensive documentation during the internship.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">AWS</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Cloud
+                  Deployment</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">JotForm</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Docker</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">GitHub
+                  Actions</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Google API</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">JSON</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray)">JavaScript ES</span>
+              </div>
+            </li> -->
+
+            <!-- Contextual Combinatorial Cascading Bandits -->
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_c3b.jpg" alt="Contextual Combinatorial Cascading Bandits">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Artificial Intelligence</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">Nov 2023</time>
+                </div>
+
+                <h3 class=" h3 project-title">Contextual Combinatorial Cascading Bandits</h3>
+                <h5 class="project-subtitle">Shaun Li, Baoxiang Wang, Shengyu Zhang, Wei Chen</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> To present and elucidate the research findings and methodologies of the paper
+                    titled "Contextual Combinatorial Cascading Bandits."
+                  </li>
+                  <li>
+                    <b>Focus: </b> The paper introduces a UCB-type algorithm, C^3-UCB, designed for a combinatorial
+                    online learning scenario. It considers contextual information and applies position discounts within
+                    the selection process, subsequently providing a nuanced approach to online recommendation and
+                    network routing.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> Highlighted the importance of context and position-based strategies in online
+                    learning through the C^3-UCB algorithm
+                  </li>
+                </ul>
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/ai/Contextual_Combinatorial_Cascading_Bandits.pdf"
+                    target="_blank"><span class="project-body-link-item">- PPT</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Research
+                  Analysis</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Contextual
+                  Application</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Data
+                  Interpretation</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Problem
+                  Solving</span>
+              </div>
+
+            </li>
+
+            <!-- Importance of Machine Learning in the Growth of Twitter -->
+            <li class="project-item active" data-filter-item data-category="ai/ml">
+
+              <figure class="project-img">
+                <img src="./assets/images/projects/proj_paper.jpg"
+                  alt="Importance of Machine Learning in the Growth of Twitter">
+              </figure>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <p class="project-category">Artificial Intelligence</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-04-31">April 2019</time>
+                </div>
+
+                <h3 class=" h3 project-title">Importance of Machine Learning in the Growth of Twitter</h3>
+                <h5 class="project-subtitle">International Journal for Research in Applied Science and Engineering
+                  Technology</h5>
+
+                <ul class="project-item-text">
+                  <li>
+                    <b>Objective:</b> Develop a machine learning-based sentiment analysis method for Twitter data,
+                    addressing challenges like slang, abbreviations, and limited tweet lengths, to accurately classify
+                    tweets into positive or negative sentiments.
+                  </li>
+                  <li>
+                    <b>Methodology:</b> Gather tweets via Twitter's API. Pre-process data by converting case, removing
+                    stop words, and stemming. Extract sentiment using both lexicon and machine learning approaches in
+                    Python.
+                  </li>
+                  <li>
+                    <b>Focus: </b> Address challenges of Twitter's unique language and optimize pre-processing steps for
+                    efficient sentiment analysis.
+                  </li>
+                  <li>
+                    <b>Outcome:</b> The study presents an effective sentiment analysis technique for Twitter, enhancing
+                    accuracy despite its language complexities.
+                  </li>
+                </ul>
+
+
+                <div class="project-body-link">
+                  <a href="./assets/documents/projects/ai/Rupal Jain_Research Certificate.pdf" target="_blank"><span
+                      class="project-body-link-item">- Certificate</span>
+                  </a>
+                  <span class="dot"></span>
+                  <a href="./assets/documents/projects/ai/Rupal-Jain_Research-paper.pdf" target="_blank">
+                    <span class="project-body-link-item">Research Paper</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-footer-body">
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Sentiment
+                  Analysis</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Data
+                  Processing</span>
+                <span class="project-footer-body-item" style="background-color: var(--light-gray-70)">Twitter API</span>
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
