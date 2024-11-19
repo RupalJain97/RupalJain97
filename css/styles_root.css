@@ -1095,6 +1095,7 @@ header.masthead .h2 {
 /* Timeline Date */
 .card-timeline-date {
   font-size: 14px;
+  padding-left : 40px;
   color: var(--bs-magenta-font);
   /* font-weight: bold; */
   margin-bottom: 10px;
