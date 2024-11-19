@@ -1,0 +1,1056 @@
+<section class="page-section bg-page-about" id="projects">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-cyan mt-0">Projects</h2>
+                <hr class="divider divider-cyan" />
+                <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-0 pb-lg-2">
+                    <div class="container ps-1 ps-lg-1">
+                        <button class="navbar-nav nav-link" onclick="filterProjects('all')">All</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#projectsResponsive" aria-controls="projectsResponsive"
+                            aria-expanded="false" aria-label="Toggle navigation"><span class="project-toggler-icon">
+                                > </span></button>
+                        <div class="collapse navbar-collapse" id="projectsResponsive">
+                            <div class="navbar-nav">
+                                <button class="nav-link" onclick="filterProjects('software')">Software</button>
+                                <button class="nav-link" onclick="filterProjects('web')">Web Development</button>
+                                <button class="nav-link" onclick="filterProjects('ai')">AI</button>
+                                <button class="nav-link"
+                                    onclick="filterProjects('visualization')">Visualization</button>
+                                <button class="nav-link" onclick="filterProjects('security')">Security</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="row gx-4 gx-lg-5" id="portfolio">
+                    <div class="container-fluid p-0">
+
+                        <!-- Distributed Trading System -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2 " id="software">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Software Development</span>
+                                        <span class="project-date">Oct 2024</span>
+                                    </div>
+                                    <img class="project-image img-fluid"
+                                        src="assets/images/projects/proj_trading_java.png" alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Software Development</span>
+                                        <span class="project-date">Oct 2024</span>
+                                    </div>
+                                    <div class="project-name text-center">Distributed Trading System
+                                    </div>
+                                    <ul class="project-description">
+                                        <li>
+                                            <b>Distributed Microservices Architecture:</b> The system processes
+                                            high-volume buy and sell
+                                            orders concurrently across multiple services, ensuring data consistency and
+                                            low latency.
+                                        </li>
+                                        <li>
+                                            <b>Multithreading:</b> Implemented concurrent order processing using Java’s
+                                            Concurrency API
+                                            thread pools and atomic synchronization to ensure low latency, data
+                                            consistency, and safe
+                                            concurrency.
+                                        </li>
+                                        <li>
+                                            <b>Real-time Order Processing and Performance Metrics:</b> Uses gRPC for
+                                            high-performance
+                                            communication between services. Integrated SSE to stream live system
+                                            performance metrics which
+                                            includes thread activity, memory usage, and system load during order
+                                            processing.
+                                        </li>
+                                        <li>
+                                            <b>Testing:</b> Extensively tested with unit, integration, and load testing
+                                            to ensure seamless
+                                            performance and reliability under high-order volumes.
+                                        </li>
+                                        <li>
+                                            <b>Further Enhancements:</b> Add user portfolio, order payment methods,
+                                            beautify the UI.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/Distributed_Trading_System"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/software_dev/Distributed_Trading_System2.mp4"
+                                            target="_blank">
+                                            <i class="bi bi-play-circle-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Java</p>
+                                            <p class="skill-item">Spring Boot</p>
+                                            <p class="skill-item">Multithreading</p>
+                                            <p class="skill-item">gRPC, SSE</p>
+                                            <p class="skill-item">Testing</p>
+                                            <p class="skill-item">Caching</p>
+                                            <p class="skill-item">MySQL DB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- EdiLite Text Editor -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2 " id="software">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Software Development</span>
+                                        <span class="project-date">Oct 2024</span>
+                                    </div>
+                                    <img class="project-image img-fluid"
+                                        src="assets/images/projects/proj_text_editor.png" alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Software Development</span>
+                                        <span class="project-date">Oct 2024</span>
+                                    </div>
+                                    <div class="project-name text-center">EdiLite Text Editor
+                                    </div>
+                                    <ul class="project-description">
+                                        <li>
+                                            <b>Core Editing Functions:</b> Linux based text editor that allows users to
+                                            create, edit, and
+                                            save files to disk, with
+                                            essential features like search and text navigation.
+                                        </li>
+                                        <li>
+                                            <b>Keyword Highlighting:</b> Implementing syntax-style highlighting for
+                                            keywords, improve
+                                            readability and user experience.
+                                        </li>
+                                        <li>
+                                            <b>Status Bar:</b> Displays real-time information about the file, including
+                                            line numbers and
+                                            cursor position, for efficient navigation.
+                                        </li>
+                                        <li>
+                                            <b>Terminal Interaction:</b> Handling raw terminal input, supporting direct,
+                                            unbuffered key
+                                            detection to provide a responsive editing experience.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple" href="https://github.com/RupalJain97/EdiLite-Text-Editor"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/software_dev/text-editor.mp4"
+                                            target="_blank">
+                                            <i class="bi bi-play-circle-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">C++</p>
+                                            <p class="skill-item">Linux</p>
+                                            <p class="skill-item">Ubuntu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Badminton -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2 " id="software">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Software Development</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <img class="project-image img-fluid"
+                                        src="assets/images/projects/proj_UABadminton.jpg" alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Software Development</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <div class="project-name text-center">Badminton Tournament Management System
+                                    </div>
+                                    <ul class="project-description">
+                                        <li>
+                                            Developed a user-friendly system to streamline event organization
+                                            and reduce manual effort.
+                                        </li>
+                                        <li>
+                                            Automated tasks like player registration, seeding, draw creation,
+                                            and match management with an intuitive Flask-based web interface.
+                                        </li>
+                                        <li>
+                                            Implemented on AWS EC2 with PostgreSQL, enhancing the efficiency of
+                                            tournament operations.
+                                        </li>
+                                        <li>
+                                            Delivered an efficient, cost-effective solution that enhanced
+                                            tournament management for the club.
+                                        </li>
+                                        <li>
+                                            Followed Agile practices throughout the Software Development
+                                            Lifecycle (SDLC) and properly documented the Architecture Report at
+                                            every stage of product development.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/UA-Badminton-Tournament-Project"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/software_dev/UA_Badminton_Tour_Demo.mp4"
+                                            target="_blank">
+                                            <i class="bi bi-play-circle-fill mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/software_dev/UA_Badminton_Tour_Final_Report.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/software_dev/UA_Badminton_Tour_PPT.pptx"
+                                            target="_blank">
+                                            <i class="bi bi-file-earmark-ppt-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Python</p>
+                                            <p class="skill-item">Flask</p>
+                                            <p class="skill-item">AWS RDS, EC2</p>
+                                            <p class="skill-item">PostgreSQL</p>
+                                            <p class="skill-item">HTML/CSS</p>
+                                            <p class="skill-item">Agile Practices</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Breakout Game -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="ai">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2024</span>
+                                    </div>
+                                    <img class="project-image img-fluid"
+                                        src="assets/images/projects/proj_breakout_ai.png" alt="..." />
+                                </div>
+                                <div class="col-lg-7  portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2024</span>
+                                    </div>
+                                    <div class="project-name text-center">Breakout Game by AI</div>
+                                    <ul class="project-description">
+                                        <li>
+                                            Trained an AI agent to master the Breakout game using Q-Learning and
+                                            Approximate Q-Learning techniques.
+                                        </li>
+                                        <li>
+                                            Implemented a custom game environment with Pygame, integrating
+                                            reinforcement learning algorithms with OpenAI Gym.
+                                        </li>
+                                        <li>
+                                            Compare the performance by varying learning rates, epsilon values,
+                                            discount factors, and number of episodes to optimize performance.
+                                            Visualized the learning curves using matplotlib.
+                                        </li>
+                                        <li>
+                                            The Approximate Q-Learning agent consistently achieved higher
+                                            rewards and greater efficiency, demonstrating the effectiveness of
+                                            feature-based learning in dynamic environments.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple" href="https://github.com/RupalJain97/Breakout_AI"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/ai/Final_Project_Report_jainrupal.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Python</p>
+                                            <p class="skill-item">Reinforcement Learning - Q-Learning</p>
+                                            <p class="skill-item">Approximate Q-Learning RDS, EC2</p>
+                                            <p class="skill-item">OpenAI Gym</p>
+                                            <p class="skill-item">Pygame</p>
+                                            <p class="skill-item">Matplotlib</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Hate Speech Detection in Tweets -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="ai">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <img class="project-image img-fluid"
+                                        src="assets/images/projects/proj_hatespeech2.jpg" alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <div class="project-name text-center">Hate Speech Detection in Tweets</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Address hate speech and abusive language in tweets using AI-based
+                                            text detection to promote non-biased content generation.
+                                        </li>
+                                        <li>
+                                            Improved model performance by fine-tuning BERTweet model and
+                                            optimized hyperparameters for diverse datasets using Python andd
+                                            integrated lexicon-based techniques with Lucene.
+                                        </li>
+                                        <li>
+                                            Measured performance using machine learning evaluation metrics
+                                            resulting in improved f1-score compared to the original model.
+                                        </li>
+                                        <li>
+                                            Achieved improved detection accuracy, and encouraging positive
+                                            social media engagement.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/Hate-Speech-Detection-Tweets"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/ai/Hate_Speech_Detection_in_Tweets.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Java</p>
+                                            <p class="skill-item">Neural Network</p>
+                                            <p class="skill-item">Lucene Library</p>
+                                            <p class="skill-item">BERTweet Model</p>
+                                            <p class="skill-item">Twitter4j API</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Data Visualization Techniques -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="visualization">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Data Visualization</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_dataviz.jpg"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Data Visualization</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <div class="project-name text-center">Complex Data Visualization</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Showcase data visualization techniques with d3.js, highlighting its
+                                            prowess in crafting interactive visualizations for diverse data
+                                            sets.
+                                        </li>
+                                        <li>
+                                            Techniques including brushable scatterplot matrices, parallel
+                                            coordinates, treemaps, volume rendering, and vector field
+                                            visualization with d3.js and VTK library, integrating 3D rendering
+                                            and specific dataset encoding.
+                                        </li>
+                                        <li>
+                                            Developed custom interactive dashboards that allowed users to
+                                            explore and manipulate complex data sets, providing insightful
+                                            visual representations for better decision-making.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Walk through the Live demo:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://rupaljain97.github.io/data-visualization-techniques/"
+                                            target="_blank">
+                                            <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/demo.png"
+                                                width="35" alt="">
+                                        </a>
+
+                                    </div>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/data-visualization-techniques"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/data_viz/data_viz_techniques_DEMO.mp4"
+                                            target="_blank">
+                                            <i class="bi bi-play-circle-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">D3.js</p>
+                                            <p class="skill-item">JavaScript</p>
+                                            <p class="skill-item">VTK Library</p>
+                                            <p class="skill-item">HTML/CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Advance Data Visualization -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="visualization">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Data Visualization</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj-tomcat.png"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Data Visualization</span>
+                                        <span class="project-date">April 2023</span>
+                                    </div>
+                                    <div class="project-name text-center">Advance Data Visualization</div>
+                                    <ul class="project-description">
+                                        <li>
+                                            Developed an integrated tool for analyzing human physiological data
+                                            to support in-depth cognitive and neural research.
+                                        </li>
+                                        <li>
+                                            Developed an all-in-one tool, integrated fNIRS, eye tracking, and
+                                            EEG for comprehensive team interaction analysis, featuring signal
+                                            and topological views, a comparison slider, and synchronized
+                                            timestamps for focused analysis.
+                                        </li>
+                                        <li>
+                                            Produced a user-friendly tool that provided data-driven insights to
+                                            optimize team performance.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/Adv-Data-Visualization-Project"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/data_viz/ToMCAT_Offline_Viz_Report.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/data_viz/ToMCAT-Offline-Viz.pptx"
+                                            target="_blank">
+                                            <i class="bi bi-file-earmark-ppt-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Python</p>
+                                            <p class="skill-item">MNE Library</p>
+                                            <p class="skill-item">QtGraph</p>
+                                            <p class="skill-item">Juxtaposition</p>
+                                            <p class="skill-item">Superimpose technique</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Rolling Dice -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="software">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Game Development</span>
+                                        <span class="project-date">Dec 2017</span>
+                                    </div>
+                                    <img class="project-image img-fluid"
+                                        src="assets/images/projects/proj_rollingdice.png" alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category">Game Development</span>
+                                        <span class="project-date">Dec 2017</span>
+                                    </div>
+                                    <div class="project-name text-center">Rolling Dice</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Created an interactive multiplayer board game using C++ and PyQT5
+                                            for GUI.
+                                        </li>
+                                        <li>
+                                            Implemented elements of luck and strategy similar to classic board
+                                            games like Snakes and Ladders.
+                                        </li>
+                                        <li>
+                                            Enhanced user engagement with a visually appealing and functional
+                                            interface.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple" href="https://github.com/RupalJain97/Rolling-Dice"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">C++</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Rubik Solver -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="software">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Game Development</span>
+                                        <span class="project-date">Dec 2017</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_rubikcube.jpg"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Game Development</span>
+                                        <span class="project-date">Dec 2017</span>
+                                    </div>
+                                    <div class="project-name  text-center">Rubik Solver</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Developed a versatile tool capable of solving a Rubik's Cube from
+                                            any scrambled state.
+                                        </li>
+                                        <li>
+                                            Integrated a user-friendly interface that allows users to input
+                                            moves manually or utilize the algorithm for a fully automated
+                                            solution.
+                                        </li>
+                                        <li>
+                                            Enhanced the overall user experience by providing clear visual
+                                            guidance and step-by-step solving instructions.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple" href="https://github.com/RupalJain97/Rubik-Solver"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">C++</p>
+                                            <p class="skill-item">Graphics Library</p>
+                                            <p class="skill-item">Turbo C++</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Security Analysis of Cryptocurrency Exchanges -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="security">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Computer Security</span>
+                                        <span class="project-date">Dec 2022</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_security.jpg"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Computer Security</span>
+                                        <span class="project-date">Dec 2022</span>
+                                    </div>
+                                    <div class="project-name text-center">Security Analysis of Cryptocurrency
+                                        Exchanges
+                                    </div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Analyzed the security practices of major cryptocurrency exchanges
+                                            like Binance, FTX, Coinbase, KuCoin, and Bitfinex using Cryptoguard.
+                                        </li>
+                                        <li>
+                                            Assessed vulnerabilities and potential risks related to data
+                                            management and private key protection.
+                                        </li>
+                                        <li>
+                                            Proposed strategies to enhance exchange security and mitigate theft
+                                            risks.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/Computer-Security-Project"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/security/Security_Analysis_of_Cryptocurrency_Exchanges.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/security/CSC 566_Research_project.pptx"
+                                            target="_blank">
+                                            <i class="bi bi-file-earmark-ppt-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Java</p>
+                                            <p class="skill-item">HTTP Protocol</p>
+                                            <p class="skill-item">MD5 Hashing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Cloudexo -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="web">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Web Development</span>
+                                        <span class="project-date">April 2019</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_cloudexo.JPG"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Web Development</span>
+                                        <span class="project-date">April 2019</span>
+                                    </div>
+                                    <div class="project-name text-center">Cloudexo</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Developed a user-friendly frontend called Cloudexo, an online
+                                            storage platform, using HTML/CSS, JavaScript, and Bootstrap.
+                                        </li>
+                                        <li>
+                                            Focused on enhancing user experience and accessibility for seamless
+                                            interaction with storage features.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple" href="https://github.com/RupalJain97/Cloudexo"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">JavaScript</p>
+                                            <p class="skill-item">Node.js</p>
+                                            <p class="skill-item">HTML/CSS</p>
+                                            <p class="skill-item">Express.js</p>
+                                            <p class="skill-item">Bootstrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Student Support System - AI Chatbot -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="ai">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2019</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_chatbot.jpg"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2019</span>
+                                    </div>
+                                    <div class="project-name text-center">Student Support System - AI Chatbot</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Developed a responsive webpage with "Cary," an AI chatbot to assist
+                                            students in educational stream selection.
+                                        </li>
+                                        <li>
+                                            Integrated with a career counseling website to provide instant
+                                            guidance and appointment scheduling.
+                                        </li>
+                                        <li>
+                                            Empowered students with easy access to resources and expert advice.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="https://github.com/RupalJain97/Artificial-Intelligence-Chatbot"
+                                            target="_blank">
+                                            <i class="bi bi-github mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">JavaScript</p>
+                                            <p class="skill-item">Node.js</p>
+                                            <p class="skill-item">Express.js</p>
+                                            <p class="skill-item">HTML/CSS</p>
+                                            <p class="skill-item">Google Cloud Platform</p>
+                                            <p class="skill-item">Firebase</p>
+                                            <p class="skill-item">Dialogflow</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Contextual Combinatorial Cascading Bandits -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="ai">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">Nov 2023</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_c3b.jpg"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">Nov 2023</span>
+                                    </div>
+                                    <div class="project-name text-center">Contextual Combinatorial Cascading Bandits
+                                    </div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            To present and elucidate the research findings and methodologies of
+                                            the paper titled "Contextual Combinatorial Cascading Bandits."
+                                        </li>
+                                        <li>
+                                            The paper introduces a UCB-type algorithm, C^3-UCB, designed for a
+                                            combinatorial online learning scenario. It considers contextual
+                                            information and applies position discounts within the selection
+                                            process, subsequently providing a nuanced approach to online
+                                            recommendation and network routing.
+                                        </li>
+                                        <li>
+                                            Highlighted the importance of context and position-based strategies
+                                            in online learning through the C^3-UCB algorithm
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/ai/Contextual_Combinatorial_Cascading_Bandits.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-earmark-ppt-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Research Analysis</p>
+                                            <p class="skill-item">Contextual Application</p>
+                                            <p class="skill-item">Data Interpretation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Importance of Machine Learning in the Growth of Twitter -->
+                        <div class="project col-lg-12 gx-4 gx-lg-5 mb-2" id="ai">
+                            <div class="row mx-3 portfolio-box">
+                                <div class="col-lg-5 text-center portfolio-box-header">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2019</span>
+                                    </div>
+                                    <img class="project-image img-fluid" src="assets/images/projects/proj_paper.jpg"
+                                        alt="..." />
+                                </div>
+                                <div class="col-lg-7 portfolio-box-caption">
+                                    <div class="project-header project-header-sm">
+                                        <span class="project-category ">Artificial Intelligence</span>
+                                        <span class="project-date">April 2019</span>
+                                    </div>
+                                    <div class="project-name text-center">Importance of Machine Learning in the
+                                        Growth of
+                                        Twitter</div>
+
+                                    <ul class="project-description">
+                                        <li>
+                                            Develop a machine learning-based sentiment analysis method for
+                                            Twitter data, addressing challenges like slang, abbreviations, and
+                                            limited tweet lengths, to accurately classify tweets into positive
+                                            or negative sentiments.
+                                        </li>
+                                        <li>
+                                            Gather tweets via Twitter's API. Pre-process data by converting
+                                            case, removing stop words, and stemming. Extracted sentiment using
+                                            both lexicon and machine learning approaches in Python.
+                                        </li>
+                                        <li>
+                                            Address challenges of Twitter's unique language and optimize
+                                            pre-processing steps for efficient sentiment analysis.
+                                        </li>
+                                    </ul>
+                                    <div class="project-documents">
+                                        <div>
+                                            Check out:
+                                        </div>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/ai/Rupal-Jain_Research-paper.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                        </a>
+                                        <a class="text-purple"
+                                            href="./assets/documents/projects/ai/Rupal Jain_Research Certificate.pdf"
+                                            target="_blank">
+                                            <i class="bi bi-award-fill mb-3 fs-4"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-skills">
+                                        <div>
+                                            Skills:
+                                        </div>
+                                        <div class="skill-tags">
+                                            <p class="skill-item">Sentiment Analysis</p>
+                                            <p class="skill-item">Data Processing</p>
+                                            <p class="skill-item">Twitter API</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="project-documents">
+                                <div>
+                                    Check out:
+                                </div>
+                                <a class="text-purple" href="https://github.com/RupalJain97" target="_blank">
+                                    <i class="bi bi-github mb-3 fs-4"></i>
+                                </a>
+
+                                <a class="text-purple" href="https://github.com/RupalJain97" target="_blank">
+                                    <i class="bi bi-play-circle-fill mb-3 fs-4"></i>
+                                </a>
+                                <a class="text-purple" href="https://github.com/RupalJain97" target="_blank">
+                                    <i class="bi bi-file-pdf-fill mb-3 fs-4"></i>
+                                </a>
+                                <a class="text-purple" href="https://github.com/RupalJain97" target="_blank">
+                                    <i class="bi bi-file-earmark-ppt-fill mb-3 fs-4"></i>
+                                </a>
+                                <a class="text-purple"
+                                    href="./assets/documents/projects/ai/Rupal Jain_Research Certificate.pdf"
+                                    target="_blank">
+                                    <i class="bi bi-award-fill mb-3 fs-4"></i>
+                                </a>
+                                <a class="text-purple" href="https://github.com/RupalJain97" target="_blank">-->
+                        <!-- https://www.flaticon.com/free-icon/demo_12366710 -->
+                        <!-- <img style="padding-top: 0.38rem;" src="./assets/images/thumbnails/demo.png"
+                                        width="35" alt="">
+                                </a>
+                            </div>  -->
+                        <!-- <div class="project-skills">
+                                <div>
+                                    Skills:
+                                </div>
+                                <i class="text-purple bi bi-github fs-4"></i>
+                                <i class="text-purple bi bi-play-circle-fill  fs-4"></i>
+                                <i class="text-purple bi bi-file-pdf-fill  fs-4"></i>
+                            </div> 
+                            <div class="text-black">
+                                <div class="btn btn-circle btn-pink btn-md-2">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-pink btn-sm">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-pink btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <a href="#" class="btn btn-outline-info btn-icon-split">
+                                    <span class="icon text-black">
+                                        <i class="bi bi-file-earmark-text"></i>
+                                    </span>
+                                    <span class="text text-cyan align-self-center"> Letter</span>
+                                </a>
+                                <div class="btn btn-circle btn-pink btn-md">
+                                    <i class="bi bi-file-earmark-text "></i>
+                                </div>
+                                <div class="btn btn-circle btn-cyan btn-md">
+                                    <i class="bi bi-file-earmark-text "></i>
+                                </div>
+                                <div class="btn btn-circle btn-grey btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-grey-cyan btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="btn btn-circle btn-grey-pink btn-md">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                            </div>
+                            -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
