@@ -44,10 +44,19 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-font-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: Merriweather, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -83,7 +92,7 @@
   --bs-purple-main-light-md: #6f42c1;
   --bs-purple-main-light: #c8aff7;
   --bs-purple-main-light-2: #c8aff779;
-  --bs-icon-color: #981C5A;
+  --bs-icon-color: #981c5a;
 }
 
 *,
@@ -119,12 +128,9 @@ hr {
   opacity: 0.25;
 }
 
-
 .my-name {
   text-align: left;
 }
-
-
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
@@ -155,7 +161,9 @@ label {
   display: inline-block;
 }
 
-[list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
+[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not(
+    [type="week"]
+  ):not([type="time"])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
 
@@ -171,7 +179,6 @@ fieldset {
   border: 0;
 }
 
-
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
@@ -186,7 +193,7 @@ fieldset {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
@@ -229,8 +236,6 @@ summary {
   display: none !important;
 }
 
-
-
 html {
   height: 100%;
   scroll-padding-top: calc(4.5rem - 1px);
@@ -250,10 +255,6 @@ body {
   justify-content: space-around;
 }
 
-
-
-
-
 /* ************************ CUSTOM ************************ */
 
 .introduction {
@@ -270,14 +271,18 @@ body {
 }
 
 #mainNav .navbar-brand {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
   color: var(--mainNav-font-color) !important;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
@@ -291,7 +296,6 @@ body {
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: var(--bs-gray-600) !important;
 }
-
 
 /* Projects */
 #projects {
@@ -307,9 +311,8 @@ body {
   /* font-weight: 700; */
   /* font-size: 0.9rem; */
   /* color: var(--bs-link-color); */
-  padding: 0.50rem 0.65rem;
+  padding: 0.5rem 0.65rem;
 }
-
 
 #projects .navbar-nav .nav-link:hover,
 #projects .navbar .nav-link:hover {
@@ -349,21 +352,19 @@ body {
   /* opacity: 0; */
 }
 
-#projects .navbar>.container,
-#projects .navbar>.container-fluid,
-#projects .navbar>.container-sm,
-#projects .navbar>.container-md,
-#projects .navbar>.container-lg,
-#projects .navbar>.container-xl,
-#projects .navbar>.container-xxl {
+#projects .navbar > .container,
+#projects .navbar > .container-fluid,
+#projects .navbar > .container-sm,
+#projects .navbar > .container-md,
+#projects .navbar > .container-lg,
+#projects .navbar > .container-xl,
+#projects .navbar > .container-xxl {
   display: flex;
   align-items: center !important;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 3%;
 }
-
-
 
 @media (min-width: 992px) {
   #mainNav {
@@ -423,7 +424,6 @@ body {
     padding: 0 1rem;
   }
 
-
   #projects .navbar-nav:last-child .nav-link {
     padding-right: 0;
   }
@@ -449,13 +449,13 @@ body {
     color: #f4623a;
   }
 
-  #projects .navbar>.container,
-  #projects .navbar>.container-fluid,
-  #projects .navbar>.container-sm,
-  #projects .navbar>.container-md,
-  #projects .navbar>.container-lg,
-  #projects .navbar>.container-xl,
-  #projects .navbar>.container-xxl {
+  #projects .navbar > .container,
+  #projects .navbar > .container-fluid,
+  #projects .navbar > .container-sm,
+  #projects .navbar > .container-md,
+  #projects .navbar > .container-lg,
+  #projects .navbar > .container-xl,
+  #projects .navbar > .container-xxl {
     gap: 0%;
   }
 }
@@ -494,7 +494,6 @@ header.masthead .h2 {
 }
 
 @media (min-width: 1200px) {
-
   header.masthead h2,
   header.masthead .h2 {
     font-size: 3.5rem;
@@ -566,7 +565,6 @@ header.masthead .h2 {
 }
 
 @media (max-width: 991px) {
-
   #testimonial #verticalLine {
     display: block;
   }
@@ -583,7 +581,6 @@ header.masthead .h2 {
     border-left: 0px !important;
   }
 
-
   #contact #verticalLine {
     display: block;
   }
@@ -595,10 +592,7 @@ header.masthead .h2 {
     opacity: 1;
     display: block;
   }
-
-
 }
-
 
 #projects .navbar-nav {
   flex-direction: row !important;
@@ -618,7 +612,6 @@ header.masthead .h2 {
 #portfolio .container-xxl {
   max-width: 1920px;
 }
-
 
 #portfolio .container-fluid .portfolio-box,
 #portfolio .container-sm .portfolio-box,
@@ -644,7 +637,6 @@ header.masthead .h2 {
   transition: bottom 0.25s ease-in-out;
   background-color: var(--bs-white);
 }
-
 
 #portfolio .container-fluid .portfolio-box-header,
 #portfolio .container-sm .portfolio-box-header,
@@ -683,7 +675,6 @@ header.masthead .h2 {
   /* justify-content: space-between; */
 }
 
-
 #portfolio .container-fluid .portfolio-box-header .project-image,
 #portfolio .container-sm .portfolio-box-header .project-image,
 #portfolio .container-md .portfolio-box-header .project-image,
@@ -701,10 +692,7 @@ header.masthead .h2 {
   text-align: center;
 }
 
-
-
 @media (min-width: 576px) {
-
   #portfolio .container-fluid .portfolio-box-caption .project-header-sm,
   #portfolio .container-sm .portfolio-box-caption .project-header-sm,
   #portfolio .container-md .portfolio-box-caption .project-header-sm,
@@ -755,7 +743,6 @@ header.masthead .h2 {
 }
 
 @media (min-width: 992px) {
-
   #portfolio .container-fluid .portfolio-box-caption .project-header,
   #portfolio .container-sm .portfolio-box-caption .project-header,
   #portfolio .container-md .portfolio-box-caption .project-header,
@@ -804,7 +791,6 @@ header.masthead .h2 {
     font-weight: bold;
   }
 }
-
 
 #portfolio .container-fluid .portfolio-box-caption .project-name,
 #portfolio .container-sm .portfolio-box-caption .project-name,
@@ -902,7 +888,6 @@ header.masthead .h2 {
   color: var(--bs-purple-main-light);
 }
 
-
 #portfolio .container-fluid .portfolio-box-caption .project-skills,
 #portfolio .container-sm .portfolio-box-caption .project-skills,
 #portfolio .container-md .portfolio-box-caption .project-skills,
@@ -935,7 +920,6 @@ header.masthead .h2 {
   background-color: transparent;
 }
 
-
 .skill-tags {
   display: flex;
   justify-content: center;
@@ -960,11 +944,10 @@ header.masthead .h2 {
   transform: scale(1.1);
 }
 
-
 .skill {
   text-align: center;
   /* width: 120px; */
-  padding-left: 10px;
+  /* padding-left: 10px; */
   padding-right: 10px;
   display: flex;
   flex-direction: column;
@@ -973,7 +956,7 @@ header.masthead .h2 {
 
 .skill-progressbar {
   text-align: center;
-  min-width: 120px;
+  /* min-width: 120px; */
 }
 
 .skills-section {
@@ -1005,7 +988,6 @@ header.masthead .h2 {
     flex-wrap: wrap;
   }
 }
-
 
 @media (max-width: 576px) {
   .skills-subcategory-sm {
@@ -1040,8 +1022,25 @@ header.masthead .h2 {
   font-size: 14px;
   color: var(--bs-text-color);
   width: max-content;
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
 }
 
+.devicon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.si {
+  font-size: 24px;
+  color: #6f42c1; /* Customize color */
+  margin-right: 10px;
+}
+
+.si:hover {
+  color: #5a31a5; /* Hover effect */
+}
 
 /* ******************** Education and Experience ************************ */
 /* Card Timeline Container */
@@ -1051,7 +1050,7 @@ header.masthead .h2 {
 }
 
 .card-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1125,7 +1124,6 @@ header.masthead .h2 {
 .card-timeline-content .card-timeline-course {
   font-size: 14px;
   color: var(--bs-gray-600);
-
 }
 
 .card-timeline-content .card-timeline-gpa {
@@ -1133,7 +1131,6 @@ header.masthead .h2 {
   color: var(--bs-gray-800);
   margin-bottom: 0;
 }
-
 
 @media (max-width: 768px) {
   .card-timeline-item {
@@ -1160,16 +1157,12 @@ header.masthead .h2 {
   }
 }
 
-
-
 footer .container {
   display: flex;
   justify-content: space-between;
 }
 
-
 #projects button {
   border: none;
   background-color: var(--bs-gray-200) !important;
-
 }
