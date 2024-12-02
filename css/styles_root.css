@@ -415,7 +415,7 @@ body {
   #projects {
     box-shadow: none;
     background-color: transparent;
-    display: flex !important;
+    /* display: flex !important; */
     flex-basis: auto;
   }
 
