@@ -68,9 +68,36 @@ window.addEventListener('DOMContentLoaded', event => {
     // new SimpleLightbox({
     //     elements: '#portfolio a.portfolio-image'
     // });
+    
+
+    // Ensure initial state hides projects
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.project-card.hidden').forEach(project => {
+            project.style.display = 'none';
+        });
+    });
 
 });
 
+function toggleProjects() {
+    const hiddenProjects = document.querySelectorAll('.project-card.hidden');
+    const toggleBtn = document.getElementById('toggle-more-btn');
+    const isHidden = Array.from(hiddenProjects).some(project => project.style.display === 'none' || !project.style.display);
+
+    if (isHidden) {
+        // Show hidden projects
+        hiddenProjects.forEach(project => {
+            project.style.display = 'block';
+        });
+        toggleBtn.textContent = 'Show Less';
+    } else {
+        // Hide projects again
+        hiddenProjects.forEach(project => {
+            project.style.display = 'none';
+        });
+        toggleBtn.textContent = 'Show More';
+    }
+}
 
 function filterProjects(category) {
     var projects = document.getElementsByClassName('project');

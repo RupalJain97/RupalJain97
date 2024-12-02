@@ -1166,3 +1166,37 @@ footer .container {
   border: none;
   background-color: var(--bs-gray-200) !important;
 }
+
+.hidden {
+  display: none;
+}
+
+#projects-bar {
+  background-color: var(--bs-purple-main-light-2);
+  align-items: center;
+}
+
+.project-card {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#projects #toggle-more-btn {
+  cursor: pointer;
+  background-color: #0056b3 !important;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px !important;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle-more-btn:hover {
+  background-color: #0056b3;
+}
